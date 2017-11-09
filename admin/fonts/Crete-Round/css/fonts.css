@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Crete Round';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/Crete-Round-italic/Crete-Round-italic.eot');
+  src: url('../fonts/Crete-Round-italic/Crete-Round-italic.eot?#iefix') format('embedded-opentype'),
+       local('Crete Round Italic'),
+       local('Crete-Round-italic'),
+       url('../fonts/Crete-Round-italic/Crete-Round-italic.woff2') format('woff2'),
+       url('../fonts/Crete-Round-italic/Crete-Round-italic.woff') format('woff'),
+       url('../fonts/Crete-Round-italic/Crete-Round-italic.ttf') format('truetype'),
+       url('../fonts/Crete-Round-italic/Crete-Round-italic.svg#CreteRound') format('svg');
+}
+

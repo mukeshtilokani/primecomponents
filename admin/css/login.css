@@ -1,0 +1,516 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html{
+font: 80% 'Segoe UI','Segoe','SegoeUI-Regular-final',Tahoma,Helvetica,Arial,sans-serif;		
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body, button, input, select, textarea {
+
+    outline: 0 none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+a {
+    color: #888888;
+    text-decoration: none;
+}
+a:hover {
+    color: #508CB5;
+    text-decoration: underline;
+}
+a img {
+    border: 0 none;
+}
+ul, ol, li {
+    list-style: none outside none;
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url("fonts/OpenSans-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url("fonts/OpenSans.woff") format("woff");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("fonts/OpenSans-Semibold.woff") format("woff");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url("fonts/OpenSans-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url("fonts/OpenSans-Extrabold.woff") format("woff");
+}
+.image {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.screenshot1 {
+    background-image: url("../images/dailycost_screenshot_1.png");
+}
+.screenshot2 {
+    background-image: url("../images/dailycost_screenshot_2.png");
+}
+.screenshot3 {
+    background-image: url("../images/dailycost_screenshot_3.png");
+}
+html, body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #888888;
+    cursor: default;
+    min-width: 960px;
+}
+.section .wrap {
+    margin: 0 auto 0px;
+    overflow: hidden;
+    position: relative;
+    width: 880px;
+}
+h2 {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 32px;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.column {
+    position: relative;
+}
+.box_skitter {
+    margin: 16px 32px 40px;
+    position: relative;
+}
+.portrait {
+    height: 548px;
+    width: 320px;
+}
+.landscape {
+    height: 300px;
+    width: 568px;
+}
+.portrait:before {
+    background: url("../images/screenshot_bg_portrait.png") no-repeat scroll 50% 0 transparent;
+    content: "";
+    display: block;
+    height: 592px;
+    left: -32px;
+    position: absolute;
+    top: -16px;
+    width: 384px;
+    z-index: 30;
+}
+.landscape:before {
+    background: url("../images/screenshot_bg_landscape.png") no-repeat scroll 50% 0 transparent;
+    content: "";
+    display: block;
+    height: 344px;
+    left: -32px;
+    position: absolute;
+    top: -16px;
+    width: 632px;
+    z-index: 30;
+}
+.box_skitter ul, .container_skitter {
+    height: 100%;
+    line-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.box_skitter .container_skitter {
+    overflow: hidden;
+    position: relative;
+}
+.box_skitter .image {
+    overflow: hidden;
+}
+.box_skitter .box_clone {
+    display: none;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    z-index: 20;
+}
+.box_skitter .box_clone img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+
+.box_skitter li {
+    height: 100%;
+    width: 100%;
+}
+.swipeview-nav {
+    margin-top: -16px;
+    text-align: center;
+}
+.swipeview-nav li {
+    background: url("../images/dailycost_sprites.png") no-repeat scroll -500px -100px transparent;
+    display: inline-block;
+    height: 24px;
+    text-indent: -999em;
+    width: 24px;
+}
+.info_slide_dots {
+    bottom: -32px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 40;
+}
+.image_number {
+    background: url("../images/dailycost_sprites.png") no-repeat scroll -548px -84px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    text-indent: -999em;
+    width: 24px;
+}
+.image_number_select {
+    background-position: -516px -84px;
+}
+#header-section .bg {
+    background: url("../images/dailycost_hero_bg.jpg") no-repeat scroll 50% 0 #7A7E91;
+    height: 448px;
+    min-width: 960px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#header-section .wrap {
+    background: url("../images/dailycost_hero.png") no-repeat scroll 50% 0 transparent;
+    height: 768px;
+    margin-bottom: 0px;
+    width: 960px;
+}
+#header-headline {
+    /*background: url("../images/dailycost_sprites.png") no-repeat scroll -208px 0 transparent;*/
+	background: url("../images/logo.png") no-repeat transparent;
+    height: 106px;
+    left: 112px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -999em;
+    top: 40px;
+    width: 420px;
+}
+#loginbox
+{
+border: 1px solid #ccc;
+color: #003569;
+left: 520px;
+padding: 20px;
+position: relative;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+top: 165px;
+width: 300px;
+border-radius:5px;
+}
+#header-intro {
+    color: rgba(0, 0, 0, 0.75);
+    left: 341px;
+    position: absolute;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    top: 180px;
+    width: 400px;
+}
+#header-intro p {
+    margin-bottom: 12px;
+}
+#hero-buttons {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#button-appstore {
+    display: block;
+    height: 72px;
+    margin: 0 auto;
+    position: relative;
+    width: 208px;
+}
+#button-appstore:hover .badge {
+    transform: translate(0px, -6px) scale(1.1);
+}
+#button-appstore:active .badge {
+    transform: translate(0px, -6px) scale(1.05);
+}
+#button-appstore .shadow {
+    background: url("../images/dailycost_sprites.png") no-repeat scroll -208px -144px transparent;
+    bottom: -1px;
+    height: 16px;
+    left: -8px;
+    opacity: 1;
+    position: absolute;
+    width: 224px;
+}
+#button-appstore:hover .shadow {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+#button-appstore:active .shadow {
+    opacity: 0.9;
+    transform: scale(0.94);
+}
+.badge {
+    background: url("../images/dailycost_sprites.png") no-repeat scroll -208px -80px transparent;
+    height: 64px;
+    position: absolute;
+    text-indent: -999em;
+    transition: all 200ms ease 0s;
+    width: 208px;
+}
+#footer-section {
+    color: #AAAAAA;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+}
+#footer-section .wrap {
+    margin-bottom: 40px;
+}
+#footer-section a {
+    color: #AAAAAA;
+}
+#footer-section a:hover {
+    color: #508CB5;
+}
+.dailycost-icon {
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    text-indent: -999em;
+    width: 208px;
+}
+.dailycost-icon .icon {
+    background: url("../images/dailycost_sprites.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 180px;
+    position: absolute;
+    width: 208px;
+    z-index: 2;
+}
+.dailycost-icon .badge {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+    transform: translate(0px, 0px) scale(0.75);
+    transition: all 400ms ease 0s;
+    z-index: 1;
+}
+.dailycost-icon:hover .badge {
+    opacity: 1;
+    transform: translate(160px, 0px) scale(0.75);
+}
+.external-links {
+    margin: 16px auto 32px;
+    text-align: center;
+}
+.external-links li {
+    display: inline-block;
+    margin: 0 4px;
+}
+.img-link {
+    background-image: url("../images/dailycost_sprites.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 32px;
+    opacity: 0.5;
+    text-indent: -999em;
+    transition: opacity 150ms ease 0s;
+    width: 32px;
+}
+.img-link:hover {
+    opacity: 0.75;
+}
+.img-link:active {
+    opacity: 0.9;
+}
+.link-guopengliang {
+    background-position: -416px -112px;
+    height: 32px;
+    margin: 0 auto;
+    width: 304px;
+}
+.link-facebook {
+    background-position: -416px -80px;
+}
+.link-twitter {
+    background-position: -448px -80px;
+}
+.link-weibo {
+    background-position: -480px -80px;
+}
+#slogan-section {
+    height: 200px;
+}
+#slogan-section p {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 54px;
+    text-align: center;
+}
+#slogan-section strong {
+    font-weight: 600;
+}
+#press-section {
+    text-align: center;
+}
+#press-section p {
+    margin: 24px;
+}
+#press-section a {
+    background-image: url("../images/dailycost_press.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 48px;
+    margin: 16px;
+    opacity: 0.5;
+    text-indent: -999em;
+    transition: opacity 150ms ease 0s;
+}
+#press-section a:hover {
+    opacity: 0.75;
+}
+#press-section a:active {
+    opacity: 0.9;
+}
+#press-section .badge-36kr {
+    background-position: 0 0;
+    width: 80px;
+}
+#press-section .badge-csdn {
+    background-position: -88px 0;
+    width: 128px;
+}
+#press-section .badge-techinasia {
+    background-position: -224px 0;
+    width: 232px;
+}
+#press-section .badge-niceapp {
+    background-position: -464px 0;
+    width: 72px;
+}
+#press-section .badge-appadvice {
+    background-position: -544px 0;
+    width: 192px;
+}
+#press-section .badge-gmic {
+    background-position: -744px 0;
+    width: 160px;
+}
+#overview-section .column-3 {
+    top: 80px;
+    width: 248px;
+}
+#overview-section .column-1 {
+    top: 320px;
+    width: 248px;
+}
+#chart-section .column-2 {
+    top: 60px;
+    width: 248px;
+}
+#currency-section .wrap {
+    background: url("../images/dailycost_currency_symbols.png") no-repeat scroll 50% 100% transparent;
+    padding-bottom: 264px;
+}
+#currency-section .column-2 {
+    top: 80px;
+    width: 248px;
+}
+#styles-section .wrap {
+    background: url("../images/dailycost_styles.jpg") no-repeat scroll 296px 0 transparent;
+    height: 360px;
+}
+#styles-section .column-1 {
+    top: 80px;
+    width: 248px;
+}
+@media not all {
+.screenshot1 {
+    background-image: url("../images/dailycost_screenshot_1.png");
+    background-size: 640px 1096px;
+}
+.screenshot2 {
+    background-image: url("../images/dailycost_screenshot_2.png");
+    background-size: 640px 1096px;
+}
+.screenshot3 {
+    background-image: url("../images/dailycost_screenshot_3.png");
+    background-size: 1136px 600px;
+}
+.portrait:before {
+    background-image: url("../images/screenshot_bg_portrait@2x.png");
+    background-size: 384px 592px;
+}
+.landscape:before {
+    background-image: url("../images/screenshot_bg_landscape@2x.png");
+    background-size: 632px 344px;
+}
+#header-section .wrap {
+    background-image: url("../images/dailycost_hero@2x.png");
+    background-size: 960px 768px;
+}
+#header-section .bg {
+    background-image: url("../images/dailycost_hero_bg@2x.jpg");
+    background-size: 960px 448px;
+}
+#press-section a {
+    background-image: url("../images/dailycost_press@2x.png");
+    background-size: 904px 48px;
+}
+.swipeview-nav li, .image_number, #header-headline, #button-appstore .shadow, .badge, .dailycost-icon .icon, .img-link {
+    background-image: url("../images/dailycost_sprites@2x.png");
+    background-size: 720px 180px;
+}
+#currency-section .wrap {
+    background-image: url("../images/dailycost_currency_symbols@2x.png");
+    background-size: 960px 256px;
+}
+#styles-section .wrap {
+    background-image: url("../images/dailycost_styles@2x.jpg");
+    background-size: 592px 360px;
+}
+}
+
+

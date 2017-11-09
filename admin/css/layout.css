@@ -1,0 +1,468 @@
+
+@media only screen and (min-width: 768px) {
+#inner-wrapper {
+	left: 0 !important;
+	padding: 0;
+}
+#inner-wrapper:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+}
+/* 1. GLOBAL DROPDOWN STYLES (these are purely for the dropdown layout and you should only edit the width of the dropdowns) */
+
+ul.nav {
+	position: relative;
+	margin-bottom: 0;/* LEVEL 2 */
+
+  
+
+    /* LEVEL 3 */
+
+  
+
+}
+ul.nav li {
+	position: relative;
+	zoom: 1;
+	list-style: none;
+}
+ul.nav li a {
+	display: block;
+	padding: .53em 1em;
+}
+ul.nav li.parent > a:after {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 0;
+	top: 10px;
+	border: 0.382em solid #f6f6f6;
+	border-color: #dddddd transparent transparent transparent;
+}
+ul.nav ul {
+	width: 11.089em;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 9999;
+	margin: 0;
+}
+ul.nav ul li {
+	float: none;
+}
+ul.nav ul li a {
+	width: 100%;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+
+  
+
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+
+  
+
+	box-sizing: border-box;/* Opera/IE 8+ */
+
+  
+
+}
+ul.nav ul li.current-menu-item > a {
+	font-weight: bold;
+}
+ul.nav ul ul {
+	left: 100%;
+	top: 0;
+}
+ul.nav li:hover > ul {
+	visibility: visible;
+}
+/* 2. TOP NAVIGATION (Add top navigation presentational styles here) */
+
+#top {
+	background: #000;
+	margin: 0 -1.618em;
+	padding: 0 1.618em;
+	display: block;
+}
+#top #top-nav,  #top .top-navigation {
+	display: block;
+}
+#top #top-nav h3,  #top .top-navigation h3 {
+	display: none;
+}
+#top ul.nav {
+	font-size: .857em;/* LEVEL 2 */
+
+  
+
+    /* LEVEL 3 */
+
+  
+
+}
+#top ul.nav > li {
+	float: left;
+}
+#top ul.nav > li a {
+	color: #999;
+}
+#top ul.nav > li a:hover {
+	background: #555;
+	color: #fff;
+}
+#top ul.nav > li:hover a {
+	background: #555;
+}
+#top ul.nav > .current-menu-item > a,  #top ul.nav > .current-page-parent > a {
+	background: #fff;
+	color: #000000;
+}
+#top ul.nav .parent a {
+	padding-right: 1.857em;
+}
+#top ul.nav .parent a:after {
+	top: 1.15em;
+	right: .8em;
+	border-width: .3em;
+	border-color: #aaaaaa transparent transparent transparent;
+}
+#top ul.nav ul {
+	background: #555;
+}
+#top ul.nav ul li a:hover {
+	background: #666;
+	color: #fff;
+}
+#top ul.nav ul li.current-menu-item > a {
+	color: #fff;
+}
+/* 3. MAIN NAVIGATION DROPDOWN MENUS (Add main navigation presentational styles here) */
+
+  /**
+
+  	 * Resets
+
+  	 * As the mobile nav features extensive styling, much of it needs to be reset for desktop orientation
+
+  	 */
+
+.show-nav #inner-wrapper {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.show-nav #navigation .top-navigation {
+	display: none;
+}
+/**
+
+  	 * The main navigation styling
+
+  	 */
+
+#navigation {
+	position: relative;
+	left: auto;
+	width: 100%;
+	padding-top: 0;
+	background: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#navigation .menus h3 {
+	display: none;
+}
+#navigation ul.nav {
+/* LEVEL 2 */
+
+  
+
+    /* LEVEL 3 */
+
+  
+
+}
+#navigation ul.nav > li {
+	margin: 0 0 .53em;
+}
+#navigation ul.nav > li a {
+	padding: 0;
+	color: #222222;
+}
+#navigation ul.nav > li a:hover {
+	color: #000;
+}
+#navigation ul.nav > li:hover {
+	color: #000;
+}
+#navigation ul.nav > li.current-menu-item > a,  #navigation ul.nav > li.current-page-parent > a {
+	font-weight: bold;
+	color: #222222;
+	border-left: 5px solid #5d9d4a;
+	margin-left: -3.631em;
+	padding-left: 3.2em;
+}
+#navigation ul.nav li a {
+	text-shadow: none;
+	border: 0;
+	color: #222222;
+}
+#navigation ul.nav li.current-menu-item > a {
+	background: none;
+	color: #222222;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+#navigation ul.nav li.current-menu-item > a:after {
+	display: none;
+}
+#navigation ul.nav li ul a,  #navigation ul.nav li ul ul li a {
+	padding: .53em 1em;
+}
+#navigation ul.nav ul {
+	background: transparent;
+	font-size: .8em;
+	border: none;
+	position: relative;
+	visibility: hidden;
+	display: none;
+	height: 0;
+}
+#navigation ul.nav ul li a {
+	color: #3c3c3c;
+	padding: .618em .3em 0 .3em;
+}
+#navigation ul.nav ul ul {
+	left: auto;
+	font-size: 1em;
+}
+#navigation ul.nav li:hover > ul {
+	visibility: visible;
+	display: block;
+	height: auto;
+}
+#navigation .widget_product_search {
+	margin-bottom: 1.618em;
+	border: 0;
+}
+#navigation .widget_product_search #searchform {
+	border: 2px solid #dddddd;
+	-webkit-border-radius: 0.236em;
+	border-radius: 0.236em;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	padding: 0;
+	background: none;
+}
+#navigation .widget_product_search #searchform #s {
+	padding: .857em 2.618em .857em .857em;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background: none;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#navigation .widget_product_search #searchform #searchsubmit {
+	display: inline-block;
+}
+#navigation .nav-close,  #navigation .nav-home {
+	display: none;
+}
+.nav-toggle {
+	display: none;
+}
+.csstransforms3d.csstransitions #navigation,  .csstransforms3d.csstransitions .show-nav #navigation,  .csstransforms3d.csstransitions .show-nav #inner-wrapper {
+	left: 0;
+	-webkit-transform: translate3d(0%, 0, 0);
+	-moz-transform: translate3d(0%, 0, 0);
+	-ms-transform: translate3d(0%, 0, 0);
+	-o-transform: translate3d(0%, 0, 0);
+	transform: translate3d(0%, 0, 0);
+}
+#header .site-header {
+	float: left;
+}
+#sidebar ul.nav .keep-open ul {
+	display: block;
+	visibility: visible;
+	height: auto;
+}
+/* 4. CONTAINERS & COLUMNS */
+
+  
+
+#sidebar {
+	min-height:550px;
+	position: relative;
+	z-index: 999;
+	padding: 4.236em 0 0 0;
+}
+#sidebar #sidebar-footer {
+	display: block;
+	visibility: visible;
+}
+#sidebar .site-header {
+	float: left;
+}
+#sidebar .site-header h1,  #sidebar .site-header h2,  #sidebar .site-header h3 {
+	float: none;
+}
+#sidebar .site-title,  #sidebar .site-description {
+	text-align: left;
+}
+#main.fullwidth,  .layout-full #main,  .col-full {
+	margin: 0;
+	width: 100%;
+}
+#sidebar {
+	float: left;
+	margin: 0.2em 0em 0.2em 0;
+	padding: 0.01em 0.3em;
+	position: relative;
+	width: 15%;
+	z-index: 999;
+}
+#content {
+	float: left;
+	margin: 0.2em 0em 0.2em 0em;
+	padding-top: 0.2em;
+	padding-left:1.5em;
+	width: 80%;
+	min-height:550px;
+		border-left: 1px solid #CCCCCC;
+}
+.layout-left-content #sidebar {
+	float: right;
+	margin: 2.244em 0 2.244em 3.631em;
+	padding: 2.244em 3.631em;
+	border-right: none;
+	border-left: 2px solid #f6f6f6;
+}
+.layout-left-content #content {
+	float: right;
+}
+.home-section#intro-message h1 {
+	font-size: 2.618em;
+}
+.home-section#intro-message p {
+	font-size: 1.387em;
+}
+.home-section#intro-message .button {
+	font-size: 1.387em;
+}
+.post .entry,  .type-page .entry {
+	font-size: 1.387em;
+}
+.entry img {
+	max-width: 100%;
+}
+.layout-full .entry img {
+	max-width: 100%;
+}
+.layout-full #main {
+	width: 100%;
+}
+.col-left {
+	float: left;
+}
+.col-right {
+	float: right;
+}
+.page-template-template-sitemap-php #sitemap-pages,  .page-template-template-sitemap-php .product-categories {
+	float: left;
+	width: 48%;
+}
+.page-template-template-sitemap-php #sitemap-categories,  .page-template-template-sitemap-php .products {
+	float: right;
+	width: 48%;
+}
+.page-template-template-sitemap-php #sitemap-posts {
+	clear: both;
+}
+.page-template-template-sitemap-php .woocommerce:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+.page-template-template-contact-php .location-twitter .col-left {
+	float: left;
+}
+.page-template-template-contact-php .location-twitter #office-location {
+	width: 48%;
+	margin: 0 1em 0 0;
+}
+.page-template-template-contact-php .location-twitter .contact-social {
+	float: left;
+	width: 48%;
+}
+.page-template-template-contact-php .location-twitter .contact-social #twitter {
+	margin: 0;
+}
+#blog-posts article {
+	width: 31.3%;
+	margin-right: 3%;
+	clear: none;
+	float: left;
+}
+#blog-posts article:nth-child(3n+3) {
+	margin-right: 0 !important;
+	clear: right;
+}
+#blog-posts article:nth-child(3n+1) {
+	clear: left;
+}
+.widget_woothemes_features .feature {
+	width: 31.3%;
+	margin-right: 3%;
+	clear: none;
+}
+.widget_woothemes_features .feature:nth-child(2n) {
+	float: left;
+}
+.widget_woothemes_features .feature.first {
+	clear: both;
+}
+.widget_woothemes_features .feature.last {
+	margin-right: 0;
+}
+.widget_woothemes_testimonials .quote {
+	width: 31.3%;
+	margin-right: 3% !important;
+	clear: none;
+}
+.widget_woothemes_testimonials .quote:nth-child(3n+3) {
+	margin-right: 0 !important;
+	clear: right;
+}
+.widget_woothemes_testimonials .quote:nth-child(3n+1) {
+	clear: left;
+}
+/* 6. IE FIXES */
+
+.ie7 #top-nav {
+	position: relative;
+	z-index: 9999999;
+}
+.ie7 #sidebar {
+	position: relative;
+	z-index: 9999999;
+}
+}
+ 
