@@ -19,9 +19,9 @@
 
 						<form action="<?=SITEURL?>search" method="post" id="search_mini_form" name="Categories">
 
-							<input type="text" placeholder="Search entire store here..." value="Search" maxlength="70" name="search" id="search">
+							<input type="text" placeholder="Search entire store here..." value="" maxlength="70" name="search" id="search">
 
-							<button id="search-submit" type="button" class="btn btn-default  search-btn-bg"> <span class="glyphicon glyphicon-search"></span>&nbsp;</button>
+							<button id="search-submit" type="submit" class="btn btn-default  search-btn-bg"> <span class="glyphicon glyphicon-search"></span>&nbsp;</button>
 
 						</form>
 

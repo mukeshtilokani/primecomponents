@@ -9,8 +9,6 @@
 
 <script src="<?=SITEURL?>js/formValidation.min.js" type="text/javascript"></script>
 
-<script src="<?=SITEURL?>js/bootstrap.min.js"></script>
-
 
 
 
