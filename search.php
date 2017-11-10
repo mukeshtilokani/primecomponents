@@ -15,7 +15,7 @@
 	if ( isset( $_POST['search'] ) ) {
 
 
-		$sText = encodeURIComponent( $_POST['search-field'] );
+		$sText = encodeURIComponent( $_POST['search'] );
 	}
 
 
@@ -180,12 +180,13 @@ or pc.pc_title like '%" . $sText . "%'
 
 										<td>
 
-											<a href="<?= SITEURL ?>products/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_alias'] ) ) ?>/<?php if(strlen(trim($rows1[ $j ]['psubc_alias']))> 0 ) {echo urldecode( htmlspecialchars_decode( $rows1[ $j ]['psubc_alias'] ) ); } else { echo "all"; } ?>/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['p_alias'] ) ) ?>">
-
+											<?php /*
+											<a href="<?= SITEURL ?>category/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_alias'] ) ) ?>/<?php if(isset($rows1[ $j ]['psubc_alias']) && strlen(trim($rows1[ $j ]['psubc_alias']))> 0 ) {echo urldecode( htmlspecialchars_decode( $rows1[ $j ]['psubc_alias'] ) ); } else { echo "all"; } ?>/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['p_alias'] ) ) ?>"> */ ?>
+												
 												<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['p_code'] ) ) ?>
 
 
-											</a>
+											<?php /*</a>*/ ?>
 
 
 										</td>
@@ -193,7 +194,7 @@ or pc.pc_title like '%" . $sText . "%'
 
 										<td>
 
-											<a href="<?= SITEURL ?>products/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_alias'] ) ) ?>">
+											<a href="<?= SITEURL ?>category/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_alias'] ) ) ?>">
 
 												<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_title'] ) ) ?>
 
@@ -204,14 +205,14 @@ or pc.pc_title like '%" . $sText . "%'
 
 
 										<td>
-											<?php if(strlen(trim($rows1[ $j ]['psubc_alias']))> 0 ) { ?>
+											<?php if(isset($rows1[ $j ]['psubc_alias']) && strlen(trim($rows1[ $j ]['psubc_alias']))> 0 ) { ?>
 
 
 
 
 
 
-											<a href="<?= SITEURL ?>products/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_alias'] ) ) ?>/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['psubc_alias'] ) ) ?>">
+											<a href="<?= SITEURL ?>sub-category/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_alias'] ) ) ?>/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['psubc_alias'] ) ) ?>">
 
 												<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['psubc_title'] ) ) ?>
 
@@ -225,7 +226,7 @@ or pc.pc_title like '%" . $sText . "%'
 
 										<td>
 
-											<a href="<?= SITEURL ?>products/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_alias'] ) ) ?>/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['psubc_alias'] ) ) ?>/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['p_alias'] ) ) ?>">
+											<a href="<?= SITEURL ?>product/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['pc_alias'] ) ) ?>/<?php echo isset($rows1[ $j ]['psubc_alias']) ?  urldecode( htmlspecialchars_decode( $rows1[ $j ]['psubc_alias'] ) ) : 'all' ?>/<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['p_alias'] ) ) ?>">
 
 												<?= urldecode( htmlspecialchars_decode( $rows1[ $j ]['p_title'] ) ) ?>
 
