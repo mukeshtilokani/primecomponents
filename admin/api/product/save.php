@@ -37,10 +37,12 @@ if(isset($_SESSION['wf_id']) && strlen($_SESSION['wf_id']) > 0) // login check
 
           else {
 
+              $pOrder = 0;
+              $pFeaturedImg = 0;
 
               $sql = "INSERT INTO products (p_title,
                                             p_code,
-											p_order_info,
+											                      p_order_info,
                                             p_alias,
                                             p_intro,
                                             p_description,
@@ -49,13 +51,15 @@ if(isset($_SESSION['wf_id']) && strlen($_SESSION['wf_id']) > 0) // login check
                                             p_catalog_file,
                                             p_pc_id,
                                             psubc_id,
+                                            p_order,
                                             p_upcoming,
+                                            p_featured_img,
                                             p_active,
                                             p_created_by,
                                             p_created_dt) VALUES
                                             (:p_title,
                                              :p_code,
-											 :p_order_info,
+											                       :p_order_info,
                                              :p_alias,
                                              :p_intro,
                                              :p_description,
@@ -64,7 +68,9 @@ if(isset($_SESSION['wf_id']) && strlen($_SESSION['wf_id']) > 0) // login check
                                              :p_catalog_file,
                                              :p_pc_id,
                                              :psubc_id,
+                                             :p_order,
                                              :p_upcoming,
+                                             :p_featured_img,
                                              :p_active,
                                              :p_created_by,
                                              :p_created_dt)";
@@ -85,7 +91,9 @@ if(isset($_SESSION['wf_id']) && strlen($_SESSION['wf_id']) > 0) // login check
               $stmt->bindParam(':p_catalog_file', $_POST['p_catalogName']);
               $stmt->bindParam(':p_pc_id', $_POST['p_pc_id']);
               $stmt->bindParam(':psubc_id', $_POST['psubc_id']);
+              $stmt->bindParam(':p_order', $pOrder);
               $stmt->bindParam(':p_upcoming', $_POST['p_upcoming']);
+              $stmt->bindParam(':p_featured_img', $pFeaturedImg);
               //print_r($stmt); exit;
               $stmt->bindParam(':p_active', $active);
               $stmt->bindParam(':p_created_by', $_SESSION['wf_id']);
