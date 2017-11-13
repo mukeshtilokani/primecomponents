@@ -44,6 +44,8 @@ if(count($result1)> 0)
 else
 
 {
+
+		$psubcOrder = 0;
 		
 		/*** echo a message saying we have connected ***/
 		/*** INSERT data ***/
@@ -52,12 +54,14 @@ else
 				pc_id,
 				psubc_alias,
 				psubc_desc,
+				psubc_order,
 				psubc_active) VALUES (
 				:psubc_title,
 				:psubc_image,
 				:pc_id,
 				:psubc_alias,
 				:psubc_desc,
+				:psubc_order,
 				:psubc_active)";
 				
 	 	
@@ -69,6 +73,7 @@ else
 		$stmt->bindParam(':pc_id', $_POST['pc_id']);      
 		$stmt->bindParam(':psubc_alias', $_POST['psubc_alias']);
 		$stmt->bindParam(':psubc_desc', $_POST['psubc_desc']);
+		$stmt->bindParam(':psubc_order', $psubcOrder);
 		// use PARAM_STR although a number 
 		$stmt->bindParam(':psubc_active', $active);   
 		//print_r($stmt); exit;							  

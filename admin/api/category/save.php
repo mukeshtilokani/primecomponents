@@ -69,21 +69,26 @@ else
 //    $imgNameSave =  saveImage($_POST['pc_imagePath']);
 
 
-
+		$pcIcon = '';
+		$pcOrder = 0;
 
 		/*** echo a message saying we have connected ***/
 		/*** INSERT data ***/
 		$sql = "INSERT INTO p_categories(pc_title,
 				pc_image,
 				pc_alias,
+				pc_icon,
 				pc_desc,
+				pc_order,
 				pc_active,
 				pc_created_by,
 				pc_created_dt) VALUES (
 				:pc_title,
 				:pc_image,
 				:pc_alias,
+				:pc_icon,
 				:pc_desc,
+				:pc_order,
 				:pc_active,
 				:pc_created_by,
 				:pc_created_dt)";
@@ -94,9 +99,11 @@ else
 							 	  
 		$stmt->bindParam(':pc_image', $_POST['pc_imageName']);
 		//$stmt->bindParam(':pc_icon', $_POST['pc_iconName']);
+		$stmt->bindParam(':pc_icon', $pcIcon);
 		$stmt->bindParam(':pc_title', $_POST['pc_title']);      
 		$stmt->bindParam(':pc_alias', $_POST['pc_alias']);
 		$stmt->bindParam(':pc_desc', $_POST['pc_desc']);
+		$stmt->bindParam(':pc_order', $pcOrder);
 		// use PARAM_STR although a number 
 		$stmt->bindParam(':pc_active', $active);  
 		$stmt->bindParam(':pc_created_by', $_SESSION['wf_id']);  
