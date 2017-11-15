@@ -4,7 +4,7 @@
 <div class="main-container col2-right-layout">
 	<div class="main container">
 		<div class="row">
-			<section class="col-main col-sm-9 wow bounceInUp animated">
+			<section class="col-main col-lg-9 wow bounceInUp animated">
 				<?php include("include/slider.php"); ?>
 				<div class="static-contain">
 					<?php
@@ -12,7 +12,7 @@
 					?>
 				</div>
 			</section>
-			<aside class="col-right sidebar col-sm-3 wow bounceInUp animated">
+			<aside class="col-right sidebar col-lg-3 wow bounceInUp animated">
 				<div class="block block-company">
 					<div class="block-title">Inquire Now!</div>
 					<div class="block-content" style="padding: 20px !important;">

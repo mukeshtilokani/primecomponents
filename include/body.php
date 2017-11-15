@@ -3,8 +3,7 @@
 	<!-- Header -->
 	<header class="header-container">
 		<div class="header container">
-			<div class="row">
-				<div class="d-flex flex-wrap align-items-center justify-content-between">
+			<div class="row align-items-center justify-content-between">
 					<div class="col-md-4 col-sm-6">
 						<!-- Header Logo -->
 						<a class="logo" title="Prime Components" href="<?= SITEURL ?>">
@@ -28,7 +27,6 @@
 						</div>
 						<!-- End Search-col -->
 					</div>
-				</div>
 			</div>
 		</div>
 	</header>

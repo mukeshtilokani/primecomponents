@@ -3,7 +3,7 @@
     <div class="footer-middle">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-lg-4">
                     <div class="footer-logo">
                         <a href="<?=SITEURL?>" title="Logo">
                             <img src="images/footer-logo.png" alt="logo" class="img-fluid">
@@ -11,7 +11,7 @@
                     </div>
                     <p>Manufacturer of PCB Terminal Blocks, Edge Connectors, Fuse Holders, Rotary Switches, Rocker Switches, Push Connectors, Sub-Miniature, Ballasts, etc. </p>
                 </div>
-                <div class="col-md-2 col-sm-4">
+                <div class="col-lg-2 col-md-6">
                     <h4>Menu</h4>
                     <ul class="links">
                         <?php
@@ -29,7 +29,7 @@
                         <?php  } ?>
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-3">
+                <div class="col-lg-2 col-md-6">
                     <h4>Products</h4>
 	                <ul class="links">
 		                <?php  $dbh = new PDO($dsn, $username, $password);
@@ -46,7 +46,7 @@
 		                <?php } ?>
                     </ul>
                 </div>
-                <div class="col-md-4 col-sm-5">
+                <div class="col-lg-4">
                     <h4>Get in Touch</h4>
                     <ul class="contact-info">
                         <li><i class="icon-mobile-phone">&nbsp;</i><span>  0265-6642566</span></li>
@@ -59,17 +59,17 @@
     </div>
     <div class="footer-primary-bottom">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12 social">
-                    <ul>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 social">
+                    <ul class="d-flex justify-content-center">
                         <li class="fb"><a href="#"></a></li>
                         <li class="tw"><a href="#"></a></li>
                         <li class="googleplus"><a href="#"></a></li>
                     </ul>
                 </div>
-                <div class="col-md-8 col-sm-6 col-xs-12 block-subscribe">
-                    <div class="newsletter">
-                        <form>
+                <div class="col-lg-8 block-subscribe">
+                    <div class="newsletter my-3">
+                        <form class="form-group d-flex justify-content-center">
                             <h4>Sign up for emails</h4>
                             <input type="text" placeholder="Enter your email address" class="input-text required-entry validate-email" title="Sign up for our newsletter" id="newsletter1" name="email">
                             <button class="subscribe" title="Subscribe" type="submit"><span>Subscribe</span></button>
@@ -81,11 +81,11 @@
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-xs-12 coppyright"> &copy; 2015 Prime Components. All Rights Reserved.</div>
-                <div class="col-sm-8 col-xs-12 company-links">
+            <div class="row my-2">
+                <div class="col-lg-4 coppyright"> &copy; <?php echo date("Y"); ?> Prime Components. All Rights Reserved.</div>
+                <div class="col-lg-8 company-links d-flex d-sm-block justify-content-center">
                     <ul class="links">
-                        <li><a href="http://www.shivamnetwork.com" title="Shivam Network" target="_blank" >Website Design : Shivam Network</a></li>
+                        <li>Website maintained by : <a href="http://www.pixelperfection.in" title="Shivam Network" target="_blank" >Pixel Perfection</a></li>
                     </ul>
                 </div>
             </div>
