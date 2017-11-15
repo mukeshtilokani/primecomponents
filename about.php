@@ -7,10 +7,12 @@
 <div class="breadcrumbs">
 	<div class="container">
 		<div class="row">
-			<ul>
-				<li class="home"> <a title="Go to Home Page" href="<?=SITEURL?>">Home</a><span>&mdash;</span></li>
-				<li class="category13"><strong>About Us</strong></li>
-			</ul>
+			<div class="col">
+				<ul>
+					<li class="home"> <a title="Go to Home Page" href="<?=SITEURL?>">Home</a><span>&mdash;</span></li>
+					<li class="category13"><strong>About Us</strong></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>

@@ -229,18 +229,18 @@ p {
 }
 
 .header .logo {
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     cursor: pointer;
     margin: 15px 0;
-    text-align: left;
-    display: block;
+    /*text-align: left;*/
+    /*display: block;*/
     /*padding-bottom: 18px;*/
-    display: inline-block
+    /*display: inline-block*/
 }
 
-.header .logo a img {
+/*.header .logo a img {
     cursor: pointer
-}
+}*/
 
 .header-top .welcome-msg {
     text-align: left;
@@ -535,10 +535,10 @@ a.block-currency:focus {
 /* search */
 
 
-/*.search-box {
-	margin: 20px auto auto;
-	right: 0px;
-}*/
+.search-box {
+	margin: 15px 0;
+	/*right: 0px;*/
+}
 
 /*#search {
     margin: 0;
@@ -1180,7 +1180,7 @@ nav {
 
 #nav>li>a>span {
     display: inline-block;
-    padding: 0px 52px;
+    padding: 0px 30px;
     line-height: 17px
 }
 
@@ -11004,22 +11004,22 @@ h3.product-name a:hover {
     .tp-leftarrow.default {
         background: rgba(255, 255, 255, 0.6) url(../images/left-a.png) no-repeat 9px -1px;
     }
-    .header .logo img {
+    /*.header .logo img {
         width: 100%;
-    }
-    .search-box {
+    }*/
+    /*.search-box {
         background: none;
         width: 150px;
-    }
-    .search-box {
+    }*/
+    /*.search-box {
         left: 0%;
         width: 100%;
         margin-top: 3px;
         margin-bottom: 15px;
-    }
-    #search {
+    }*/
+    /*#search {
         width: 83%;
-    }
+    }*/
     .col-xs-1,
     .col-sm-1,
     .col-md-1,
@@ -11331,11 +11331,11 @@ h3.product-name a:hover {
     .toplinks div.links div a {
         padding: 5px 3px 8px 8px;
     }
-    .header .logo {
+    /*.header .logo {
         margin-top: 15px;
         width: 40%;
         text-align: left;
-    }
+    }*/
     .mini-cart .basket .cart-box {
         display: none;
     }
@@ -11803,15 +11803,15 @@ h3.product-name a:hover {
         top: 37px;
         right: 0px;
     }
-    .header .logo {
+    /*.header .logo {
         width: 100%;
         text-align: center;
         margin-top: 18px;
         margin-bottom: 45px;
-    }
-    .header .logo img {
+    }*/
+    /*.header .logo img {
         width: auto;
-    }
+    }*/
     ul.topnav li a {
         text-align: left;
     }
@@ -11856,7 +11856,7 @@ h3.product-name a:hover {
         display: none;
     }
     /* Search */
-    .search-box {
+    /*.search-box {
         background: none;
         width: 200px;
     }
@@ -11865,16 +11865,16 @@ h3.product-name a:hover {
         width: 85%;
         margin-top: 62px;
         position: absolute;
-    }
-    #search {
+    }*/
+    /*#search {
         border: 1px solid #ECF0F1;
         height: 36px;
         width: 90%;
-    }
-    #search:focus {
+    }*/
+    /*#search:focus {
         border: 1px #fff solid;
-    }
-    .search-btn-bg {
+    }*/
+    /*.search-btn-bg {
         right: 10px;
         height: 36px;
         padding: 5px 5px 5px 8px;
@@ -11884,7 +11884,7 @@ h3.product-name a:hover {
         padding: 0px 3px;
         top: 0px;
         margin-top: 1px;
-    }
+    }*/
     .toplinks div.links div a {
         padding: 5px 3px 8px 8px;
     }
@@ -12331,20 +12331,20 @@ h3.product-name a:hover {
     .toplinks {
         margin-right: 30px;
     }
-    .search-box {
+/*    .search-box {
         width: 75%;
         position: absolute;
         top: 20px;
         margin: 0px;
         right: 15px;
-    }
-    #search {
+    }*/
+    /*#search {
         width: 84%;
         height: 40px;
-    }
-    .search-btn-bg {
+    }*/
+    /*.search-btn-bg {
         height: 40px;
-    }
+    }*/
     #nav>li>a {
         height: 45px;
         padding: 13px 1px;
@@ -12743,16 +12743,16 @@ h3.product-name a:hover {
     #magik-slideshow .RHS-banner .add img {
         width: 100%;
     }
-    .search-box {
+    /*.search-box {
         width: 42%;
-    }
+    }*/
     .cate-dropdown,
     .cate-dropdown:focus {
         width: 25%;
     }
-    #search {
+    /*#search {
         width: 84%;
-    }
+    }*/
     .tp-simpleresponsive .slotholder *,
     .tp-simpleresponsive img {
         background-position: 49% 0% !important;

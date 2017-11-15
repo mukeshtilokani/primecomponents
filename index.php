@@ -7,18 +7,9 @@
 			<section class="col-main col-sm-9 wow bounceInUp animated">
 				<?php include("include/slider.php"); ?>
 				<div class="static-contain">
-
 					<?php
-
-
-
 						pageContent( 'home');
-
-
-
 					?>
-
-
 				</div>
 			</section>
 			<aside class="col-right sidebar col-sm-3 wow bounceInUp animated">
