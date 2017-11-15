@@ -14,15 +14,17 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<!-- Search-col -->
-						<div class="search-box pull-right">
-							<form action="<?=SITEURL?>search" method="post" id="search_mini_form" name="Categories">
-								<div class="input-group">
-	                                <input type="text" class="form-control" placeholder="Search entire store here..." value="" maxlength="70" name="search" id="search">
-	                                <span class="input-group-btn">
-	                                    <button id="search-submit" type="submit" class="btn round btn-primary search-btn-bg " type="button">Search</button>
-	                                </span>
-	                            </div>
-							</form>
+						<div class="row">
+							<div class="search-box col d-flex justify-content-end">
+								<form action="<?=SITEURL?>search" method="post" id="search_mini_form" name="Categories">
+									<div class="input-group">
+		                                <input type="text" class="form-control w-100" placeholder="Search entire store here..." value="" maxlength="70" name="search" id="search">
+		                                <span class="input-group-btn">
+		                                    <button id="search-submit" type="submit" class="btn round btn-primary search-btn-bg " type="button">Search</button>
+		                                </span>
+		                            </div>
+								</form>
+							</div>
 						</div>
 						<!-- End Search-col -->
 					</div>
