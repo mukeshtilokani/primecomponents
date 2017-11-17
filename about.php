@@ -20,7 +20,7 @@
 <div class="main-container col2-right-layout">
 	<div class="main container">
 		<div class="row">
-			<section class="col-main col-sm-9 wow bounceInUp animated">
+			<section class="col-main col-lg-9 wow bounceInUp animated">
 				<div class="page-title">
 					<h2>About Us</h2>
 				</div>
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 			</section>
-			<aside class="col-right sidebar col-sm-3 wow bounceInUp animated">
+			<aside class="col-right sidebar col-lg-3 wow bounceInUp animated">
 			<?php include( "include/sidebar.php" ); ?>
 			</aside>
 		</div>

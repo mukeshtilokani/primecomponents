@@ -6,7 +6,7 @@
                 <div class="col-lg-4">
                     <div class="footer-logo">
                         <a href="<?=SITEURL?>" title="Logo">
-                            <img src="images/footer-logo.png" alt="logo" class="img-fluid">
+                            <img src="/images/footer-logo.png" alt="logo" class="img-fluid">
                         </a>
                     </div>
                     <p>Manufacturer of PCB Terminal Blocks, Edge Connectors, Fuse Holders, Rotary Switches, Rocker Switches, Push Connectors, Sub-Miniature, Ballasts, etc. </p>

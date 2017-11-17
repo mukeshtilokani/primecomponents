@@ -4,14 +4,14 @@
 	<header class="header-container">
 		<div class="header container">
 			<div class="row align-items-center justify-content-between">
-					<div class="col-md-4 col-sm-6">
+					<div class="col-lg-4 col-md-6">
 						<!-- Header Logo -->
 						<a class="logo" title="Prime Components" href="<?= SITEURL ?>">
 							<img alt="Prime Components" src="<?=SITEURL?>images/logo.png" class="img-fluid">
 						</a>
 						<!-- End Header Logo -->
 					</div>
-					<div class="col-md-4 col-sm-6">
+					<div class="col-lg-4 col-md-6">
 						<!-- Search-col -->
 						<div class="row">
 							<div class="search-box col d-flex justify-content-end">

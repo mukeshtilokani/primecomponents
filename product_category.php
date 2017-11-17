@@ -42,7 +42,7 @@
 		<div class="main-container col2-right-layout">
 			<div class="main container">
 				<div class="row">
-					<section class="col-main col-sm-9 col-sm-push-3">
+					<section class="col-main col-lg-9">
 
 
 						<div
@@ -77,7 +77,7 @@ margin-bottom: 10px;
 margin-top: 0;
 padding: 10px 20px;"><?= urldecode( htmlspecialchars_decode( $valueSubCatData->psubc_title ) ) ?> </h1>
 
-									<ul class="products-grid">
+									<ul class="products-grid row">
 
 										<?php $dbh = new PDO( $dsn, $username, $password );
 
@@ -119,13 +119,13 @@ padding: 10px 20px;"><?= urldecode( htmlspecialchars_decode( $valueSubCatData->p
 
 																						src="<?= SITEURL ?>images/products/medium/<?= urldecode( htmlspecialchars_decode( $image ) ) ?>"
 
-																						alt=""  />
+																						alt="" class="img-fluid" />
 
 																				<?php } else { ?>
 
 																					<img src="<?= SITEURL ?>images/no-image.jpg"
 
-																					     alt="" style="max-height: 150px;max-width: 210px;"/>
+																					     alt="" class="img-fluid"/>
 
 																				<?php } ?>
 
@@ -199,13 +199,13 @@ padding: 10px 20px;"><?= urldecode( htmlspecialchars_decode( $valueSubCatData->p
 
 																						src="<?= SITEURL ?>images/products/medium/<?= urldecode( htmlspecialchars_decode( $image ) ) ?>"
 
-																						alt="" />
+																						alt="" class="img-fluid"/>
 
 																				<?php } else { ?>
 
 																					<img src="<?= SITEURL ?>images/no-image.jpg"
 
-																					     alt="" style="max-height: 150px;max-width: 210px;"/>
+																					     alt="" class="img-fluid"/>
 
 																				<?php } ?>
 
@@ -238,7 +238,7 @@ padding: 10px 20px;"><?= urldecode( htmlspecialchars_decode( $valueSubCatData->p
 
 
 					</section>
-					<aside class="col-right sidebar col-sm-3 col-xs-12 col-sm-pull-9">
+					<aside class="col-right sidebar col-lg-3">
 						<?php include( "include/sidebar.php" ); ?>
 					</aside>
 				</div>
