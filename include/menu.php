@@ -4,20 +4,20 @@ include("include/functions.php");
 ?>
 
 <!-- Navbar -->
-<nav>
+<nav class="navbar navbar-expand-lg p-lg-0">
     <div class="container">
         <div class="nav-inner">
             <!-- mobile-menu -->
             <div class="hidden-desktop" id="mobile-menu">
                 <ul class="navmenu">
                     <li>
-                        <div class="menutop">
+                        <div class="menutop d-flex align-items-center justify-content-between">
+                            <h2>Categories</h2>
                             <div class="toggle">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </div>
-                            <h2>Categories</h2>
                         </div>
                         <ul style="display:none;" class="submenu">
                             <li>
@@ -246,7 +246,6 @@ include("include/functions.php");
                 </ul>
                 <!--navmenu-->
             </div>
-
             <!--End mobile-menu -->
             <ul id="nav" class="hidden-xs">
                 <?php
