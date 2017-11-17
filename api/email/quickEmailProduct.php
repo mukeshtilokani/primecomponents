@@ -101,6 +101,36 @@ $mail->Subject = 'Website Inquiry';
 
         <div style="display:table-row"> 
 
+          <div style="display:table-cell"><strong>Category</strong> </div>
+
+          <div style="display:table-cell"> <strong>:</strong> </div>
+
+          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['category'].'</div>
+
+        </div>
+
+        <div style="display:table-row"> 
+
+          <div style="display:table-cell"><strong>Sub-Category</strong> </div>
+
+          <div style="display:table-cell"> <strong>:</strong> </div>
+
+          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['subcategory'].'</div>
+
+        </div>
+
+        <div style="display:table-row"> 
+
+          <div style="display:table-cell"><strong>Product</strong> </div>
+
+          <div style="display:table-cell"> <strong>:</strong> </div>
+
+          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['product'].'</div>
+
+        </div>
+
+        <div style="display:table-row"> 
+
           <div style="display:table-cell"><strong>Message</strong> </div>
 
           <div style="display:table-cell"> <strong>:</strong> </div>
@@ -156,18 +186,7 @@ $mail->msgHTML($body);
 //Replace the plain text body with one created manually
 
   
-
-        
-
-       if (!$mail->send()) {
-
-    echo "Mailer Error: " . $mail->ErrorInfo;
-
-} else {
-
-    echo "Message sent to administrator!  ";
-
-} 
+$mail->send();
 
 
 $mail= new PHPMailer();//creating instance of php mailer class 
@@ -259,30 +278,12 @@ $mail->Subject = 'Thank you for contacting Prime Components';
 $mail->msgHTML($body);
 
 //Replace the plain text body with one created manually
-
   
 
-        
-
-       if (!$mail->send()) {
-
-    echo "Mailer Error: " . $mail->ErrorInfo;
-
-} else {
-
-    echo "  Message sent to visitor!";
-
-} 
-
-   
-
-     
-
- 
+$mail->send();
 
 
-
-
+return json_encode(array('status' => 'success'))
 
 ?>
 
