@@ -64,10 +64,10 @@
 				<div class="col-main">
 					<div class="row">
 
-						<section class="col-main col-sm-9 wow bounceInUp animated">
+						<section class="col-main col-lg-9 wow bounceInUp animated">
 							<div class="product-view">
 								<div class="product-essential">
-									<form action="#" method="post" id="product_addtocart_form">
+									<form action="#" method="post" id="product_addtocart_form" class="row">
 
 										<div class="product-img-box col-sm-6 col-xs-12">
 											<!--										<div class="new-label new-top-left"> New </div>-->
@@ -215,7 +215,7 @@
 								</div>
 							</div>
 						</section>
-						<aside class="col-right sidebar col-sm-3 wow bounceInUp animated">
+						<aside class="col-right sidebar col-lg-3 wow bounceInUp animated">
 							<div class="block block-company">
 								<div class="block-title">Inquire Now!</div>
 								<div class="block-content" style="padding: 20px !important;">
