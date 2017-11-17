@@ -18,7 +18,7 @@
 <div class="main-container col2-right-layout">
 	<div class="main container">
 		<div class="row">
-			<section class="col-main col-sm-9 col-sm-push-3">
+			<section class="col-main col-lg-9">
 
 
 				<?php
@@ -60,7 +60,7 @@ padding: 10px 20px;"><?= urldecode( $rows2[ $k ]['psubc_title'] ) ?> </h1>
 
 
 
-							<ul class="products-grid">
+							<ul class="products-grid row">
 
 										<?php $dbh = new PDO( $dsn, $username, $password );
 											$sql3  = $dbh->prepare( " SELECT * FROM products p LEFT JOIN
@@ -98,13 +98,13 @@ padding: 10px 20px;"><?= urldecode( $rows2[ $k ]['psubc_title'] ) ?> </h1>
 
 																						src="<?= SITEURL ?>images/products/medium/<?= urldecode( htmlspecialchars_decode( $image ) ) ?>"
 
-																						alt=""  />
+																						alt=""   class="img-fluid"/>
 
 																				<?php } else { ?>
 
 																					<img src="<?= SITEURL ?>images/no-image.jpg"
 
-																					     alt="" style="max-height: 150px;max-width: 210px;"/>
+																					     alt="" class="img-fluid"/>
 
 																				<?php } ?>
 
@@ -140,7 +140,7 @@ padding: 10px 20px;"><?= urldecode( $rows2[ $k ]['psubc_title'] ) ?> </h1>
 
 							<div class="category-products">
 
-								<ul class="products-grid">
+								<ul class="products-grid row">
 
 									<?php $dbh = new PDO( $dsn, $username, $password );
 										$sql3  = $dbh->prepare( " SELECT * FROM products p LEFT JOIN
@@ -175,13 +175,13 @@ padding: 10px 20px;"><?= urldecode( $rows2[ $k ]['psubc_title'] ) ?> </h1>
 
 																						src="<?= SITEURL ?>images/products/medium/<?= urldecode( htmlspecialchars_decode( $image ) ) ?>"
 
-																						alt="" />
+																						alt="" class="img-fluid"/>
 
 																				<?php } else { ?>
 
 																					<img src="<?= SITEURL ?>images/no-image.jpg"
 
-																					     alt="" style="max-height: 150px;max-width: 210px;"/>
+																					     alt="" class="img-fluid"/>
 
 																				<?php } ?>
 
@@ -220,7 +220,7 @@ padding: 10px 20px;"><?= urldecode( $rows2[ $k ]['psubc_title'] ) ?> </h1>
 
 
 			</section>
-			<aside class="col-right sidebar col-sm-3 col-xs-12 col-sm-pull-9">
+			<aside class="col-right sidebar col-lg-3">
 				<?php include( "include/sidebar.php" ); ?>
 			</aside>
 		</div>

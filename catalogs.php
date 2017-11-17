@@ -21,7 +21,7 @@
 		<div class="row">
 
 
-			<section class="col-main col-sm-9 col-sm-push-3">
+			<section class="col-main col-lg-9">
             
             <div style="background-color: #F0AA21 ;
     font-size: 22px;
@@ -72,7 +72,7 @@ margin-top: 0;
 padding: 10px 20px;"><?= urldecode( htmlspecialchars_decode( $valueSubCatData->psubc_title ) ) ?> </h1>
 
 
-							<ul class="products-grid">
+							<ul class="products-grid row">
 
 								<?php $dbh = new PDO( $dsn, $username, $password );
 									$sql3  = $dbh->prepare( "SELECT * FROM products WHERE p_pc_id='" . $valueCatData->pc_id . "' and psubc_id='" . $valueSubCatData->psubc_id . "' " );
@@ -127,7 +127,7 @@ padding: 10px 20px;"><?= urldecode( htmlspecialchars_decode( $valueSubCatData->p
 
 
 
-							<ul class="products-grid">
+							<ul class="products-grid row">
 
 								<?php $dbh = new PDO( $dsn, $username, $password );
 									$sql3  = $dbh->prepare( "SELECT * FROM products WHERE p_pc_id='" . $valueCatData->pc_id . "' " );
@@ -179,7 +179,7 @@ padding: 10px 20px;"><?= urldecode( htmlspecialchars_decode( $valueSubCatData->p
 					}?>
 			</section>
 
-			<aside class="col-right sidebar col-sm-3 col-xs-12 col-sm-pull-9">
+			<aside class="col-right sidebar col-lg-3">
 				<?php include( "include/sidebar-catalog.php" ); ?>
 			</aside>
 		</div>
