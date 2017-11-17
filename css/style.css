@@ -13,13 +13,13 @@ Text Domain:  Vista
 
 /* TABLE OF CONTENTS
 
-1.	Body
+1.  Body
 
-2.	Layout 
+2.  Layout 
 
-3.	Header
+3.  Header
 
-4.	Navigation
+4.  Navigation
 
 5. Header Service
 
@@ -145,6 +145,8 @@ p {
 }
 
 
+
+
 /*------------- 2. Layout ------------ */
 
 .page {
@@ -153,6 +155,8 @@ p {
     background: #fff;
     width: 100%;
 }
+
+
 
 
 /* Base Columns */
@@ -168,6 +172,8 @@ p {
 }
 
 
+
+
 /* 1 Column Layout */
 
 .col1-layout .header-background-default {
@@ -181,6 +187,8 @@ p {
 }
 
 
+
+
 /* 2 Columns Layout */
 
 .col2-left-layout .col-main {}
@@ -190,6 +198,8 @@ p {
 .col2-right-layout ol.opc .col-md-4 {
     margin-right: 15px;
 }
+
+
 
 
 /* 3 Columns Layout */
@@ -210,6 +220,8 @@ p {
     min-height: 400px;
     padding: 20px 0 0px;
 }
+
+
 
 
 /*------------- 3. Header -------------*/
@@ -238,6 +250,8 @@ p {
     /*display: inline-block*/
 }
 
+
+
 /*.header .logo a img {
     cursor: pointer
 }*/
@@ -251,6 +265,8 @@ p {
     color: #333;
     font-family: "Lato", sans-serif;
 }
+
+
 
 
 /* language & currency */
@@ -320,6 +336,8 @@ ul.currencies_list li a:hover {
     color: #fff;
     text-decoration: none;
 }
+
+
 
 
 /* End language &amp; currency*/
@@ -444,6 +462,8 @@ a.block-currency:focus {
 }
 
 
+
+
 /* Toplink */
 
 .toplinks {
@@ -532,13 +552,16 @@ a.block-currency:focus {
 }
 
 
+
+
 /* search */
 
-
 .search-box {
-	margin: 15px 0;
-	/*right: 0px;*/
+    margin: 15px 0;
+    /*right: 0px;*/
 }
+
+
 
 /*#search {
     margin: 0;
@@ -610,7 +633,6 @@ a.block-currency:focus {
 
 .block-company label {
     font-weight: normal;
-    padding: 5px 5px 2px 0px;
 }
 
 .block-company-wrapper .dropdown-menu {
@@ -634,6 +656,8 @@ a.block-currency:focus {
     color: #333 !important;
     background: none;
 }
+
+
 
 
 /* Top Shopping Cart */
@@ -981,6 +1005,8 @@ a.glyphicon-pencil:hover {
 }
 
 
+
+
 /* Store Messages */
 
 #store-messages {
@@ -1072,6 +1098,8 @@ a.glyphicon-pencil:hover {
 
 
 
+
+
 /*----------- 4. Navigation -------------*/
 
 nav {
@@ -1128,6 +1156,8 @@ nav {
 }
 
 
+
+
 /* Drop-down menu (horizontal)*/
 
 .nav-inner {
@@ -1144,6 +1174,8 @@ nav {
 }
 
 
+
+
 /* All levels */
 
 #nav li {
@@ -1158,6 +1190,8 @@ nav {
 #nav li a span {}
 
 #nav li ul a span {}
+
+
 
 
 /* 1st level only */
@@ -1185,15 +1219,19 @@ nav {
 }
 
 
+
+
 /* Drop-down boxes:
-	wide:    2nd-level category drop-down box + custom block drop-down box
-	classic: custom block drop-down box */
+    wide:    2nd-level category drop-down box + custom block drop-down box
+    classic: custom block drop-down box */
 
 #nav .level0-wrapper {
     position: absolute;
     left: -10000px;
     background-color: #fff;
 }
+
+
 
 
 /* Inner wrapper for additional padding */
@@ -1214,6 +1252,8 @@ nav {
 }
 
 
+
+
 /* Home link */
 
 
@@ -1222,6 +1262,8 @@ nav {
 #nav a.level-top.feature {
     margin: 0;
 }
+
+
 
 
 /* Icon inside item */
@@ -1240,6 +1282,8 @@ nav {
 }
 
 
+
+
 /* Single icon as home link */
 
 #nav #homelink-icon {
@@ -1255,6 +1299,8 @@ nav {
 }
 
 
+
+
 /* Custom menu item */
 
 #nav .nav-custom-link>a {
@@ -1262,11 +1308,15 @@ nav {
 }
 
 
+
+
 /* Remove 'relative' positioning from custom 'li' (custom block have to be positioned relative to #nav) */
 
 #nav .nav-custom-link {
     position: static;
 }
+
+
 
 
 /* Static block's content - basic formatting */
@@ -1290,6 +1340,8 @@ nav {
 }
 
 
+
+
 /* Caret */
 
 #nav a.level-top .caret {
@@ -1306,6 +1358,8 @@ nav {
 }
 
 
+
+
 /* Number of products in category */
 
 
@@ -1315,6 +1369,8 @@ nav {
     margin-left: 3px;
     color: #aaa;
 }
+
+
 
 
 /* Main menu */
@@ -1329,6 +1385,8 @@ nav {
 }
 
 
+
+
 /* Other */
 
 .nav .itemslider {
@@ -1339,6 +1397,8 @@ nav {
 .nav .itemslider .item {
     padding-bottom: 0;
 }
+
+
 
 
 /* 1st level */
@@ -1355,6 +1415,8 @@ li.level0>a>span>.cat-label {
     font-size: 12px;
     line-height: 22px;
 }
+
+
 
 
 /* Add pin (only 1st level) */
@@ -1383,6 +1445,8 @@ li.level0>a:hover>span>.pin-bottom:before {
 }
 
 
+
+
 /* 2nd level */
 
 li.level1>a>span>.cat-label {
@@ -1393,6 +1457,8 @@ li.level1>a>span>.cat-label {
 }
 
 
+
+
 /* 3rd level */
 
 li.level2>a>span>.cat-label {
@@ -1400,6 +1466,8 @@ li.level2>a>span>.cat-label {
     padding: 0 4px;
     margin-left: 2px;
 }
+
+
 
 
 /* Category labels inside mobile menu / vertical menu */
@@ -1412,11 +1480,15 @@ ul.vertnav li>a>span>.cat-label {
 }
 
 
+
+
 /* Hide pin */
 
 ul.vertnav li>a>span>.pin-bottom:before {
     display: none;
 }
+
+
 
 
 /* Label size: all levels */
@@ -1430,6 +1502,8 @@ ul.vertnav-top li>a>span>.cat-label {
     font-size: 12px;
     line-height: 18px;
 }
+
+
 
 
 /* Category blocks */
@@ -1465,11 +1539,15 @@ ul.vertnav-top li>a>span>.cat-label {
 }
 
 
+
+
 /* Section line (separator) is lighter than other lines */
 
 .nav-block .section-line {
     border-color: #eee;
 }
+
+
 
 
 /* Common styles for main menu (horizontal + mobile vertical + mobile menu trigger) */
@@ -1561,12 +1639,16 @@ li.level0>a:hover>span>.pin-bottom:before,
 }
 
 
+
+
 /* 1st level only */
 
 #nav>li:hover>a {
     position: relative;
     z-index: 1;
 }
+
+
 
 
 /* 2nd level only */
@@ -1608,6 +1690,8 @@ li.level0>a:hover>span>.pin-bottom:before,
 }
 
 
+
+
 /* 2nd level+ */
 
 #nav ul li {
@@ -1620,6 +1704,8 @@ li.level0>a:hover>span>.pin-bottom:before,
 #nav ul li a {
     float: none;
 }
+
+
 
 
 /* 3rd level only */
@@ -1656,6 +1742,8 @@ li.level0>a:hover>span>.pin-bottom:before,
 }
 
 
+
+
 /* 4th level */
 
 #nav ul.level2 {
@@ -1679,12 +1767,16 @@ li.level0>a:hover>span>.pin-bottom:before,
 }
 
 
+
+
 /* 4rd level+ */
 
 #nav ul ul ul li {
     background: none;
     padding-left: 0;
 }
+
+
 
 
 /* Vertical nav-links %%%%%%%%% */
@@ -1701,6 +1793,8 @@ li.level0>a:hover>span>.pin-bottom:before,
 .nav-links>li.label {
     padding-right: 0.5833em;
 }
+
+
 
 
 /* Basic nav-links, no separators */
@@ -2047,6 +2141,8 @@ li.level0>a:hover>span>.pin-bottom:before,
 }
 
 
+
+
 /* Mob Menu */
 
 #mobile-menu {
@@ -2059,7 +2155,7 @@ li.level0>a:hover>span>.pin-bottom:before,
 #mobile-menu .toggle {
     float: right;
     width: 45px;
-    height: 40px;
+    /*height: 40px;*/
     cursor: pointer;
     background: #a7cf47;
     transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
@@ -2070,8 +2166,18 @@ li.level0>a:hover>span>.pin-bottom:before,
     font-family: FontAwesome;
     font-size: 24px;
     color: #fff;
-    margin: 10px 10px 10px 10px;
-    line-height: 39px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 #mobile-menu ul {
@@ -2083,7 +2189,7 @@ li.level0>a:hover>span>.pin-bottom:before,
 #mobile-menu ul.navmenu ul.submenu {
     padding: 2px 0 0;
     background: #fff;
-    width: 99.8%;
+    /*width: 99.8%;*/
     border-bottom: 5px solid #2d5290;
 }
 
@@ -2200,6 +2306,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /*----------- 5. Header Service ------------ */
 
 .header-service {
@@ -2257,6 +2365,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /*-----------6. Offer Banner------- */
 
 .offer-banner-section {
@@ -2301,6 +2411,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /*-------- 7. recommend products page ---------- */
 
 .new_title.center {
@@ -2327,6 +2439,8 @@ ul.topnav em:hover {
     text-shadow: 0 1px 0 #fff;
     text-transform: uppercase;
 }
+
+
 
 
 /*--------- 8. New & Sale Label --------- */
@@ -2528,6 +2642,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /*------------ 9. Product View ---------- */
 
 .product-view #product-img-box .new-box,
@@ -2607,6 +2723,8 @@ ul.topnav em:hover {
     z-index: 100;
     font-weight: normal;
 }
+
+
 
 
 /* carousel */
@@ -2894,6 +3012,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /* category product */
 
 .producttabs {
@@ -3085,6 +3205,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /* products page */
 
 .col-item {
@@ -3163,6 +3285,8 @@ ul.topnav em:hover {
     overflow: hidden;
     opacity: 0.9;
 }
+
+
 
 
 /*--------- 10. Rating ----------- */
@@ -3251,6 +3375,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /*----------- 11. Price ----------- */
 
 .price {
@@ -3264,6 +3390,8 @@ ul.topnav em:hover {
     min-height: 20px;
     font-weight: 300;
 }
+
+
 
 
 /* Regular price */
@@ -3303,6 +3431,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /* Old price */
 
 .old-price .price-label {
@@ -3321,6 +3451,8 @@ ul.topnav em:hover {
     display: none;
     padding: 0 5px;
 }
+
+
 
 
 /* Old price */
@@ -3343,6 +3475,8 @@ ul.topnav em:hover {
 .latest-product .old-price .price-label {
     display: none;
 }
+
+
 
 
 /* Special price */
@@ -3379,6 +3513,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /* Minimal price (as low as) */
 
 .minimal-price {
@@ -3394,6 +3530,8 @@ ul.topnav em:hover {
 }
 
 .minimal-price-link .label {}
+
+
 
 
 /* Special price */
@@ -3429,6 +3567,8 @@ ul.topnav em:hover {
 }
 
 
+
+
 /* Minimal price (as low as) */
 
 .minimal-price {
@@ -3454,6 +3594,8 @@ ul.topnav em:hover {
     color: #333;
     font-size: 13px;
 }
+
+
 
 
 /*---------- 12. Promo slider ---------*/
@@ -3570,6 +3712,8 @@ small {
 .recommend .controls .prev {
     right: 36px;
 }
+
+
 
 
 /*-------- 13. blog-post ------------ */
@@ -3699,6 +3843,8 @@ small {
 }
 
 
+
+
 /*--------- 14. To Top ------------ */
 
 #toTop:active,
@@ -3735,10 +3881,25 @@ small {
 }
 
 
+
+
 /*-------- 15. Products slider --------- */
 
 .owl-item .item {
     margin: 0 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .slider-items-products {
@@ -3828,6 +3989,8 @@ small {
 }
 
 
+
+
 /*--------- 16. Breadcrums ----------*/
 
 .breadcrumbs {
@@ -3860,6 +4023,8 @@ small {
     font-size: 13px;
     margin: 0 5px;
 }
+
+
 
 
 /*--------- 17. Sidebar ---------- */
@@ -3950,7 +4115,9 @@ small {
 }
 
 
-/*	Category boxes */
+
+
+/*  Category boxes */
 
 .box-category {
     padding: 15px;
@@ -4093,6 +4260,8 @@ small {
     color: #fff;
     /*color:#5CD2C8;*/
 }
+
+
 
 
 /* Sidebar, Block */
@@ -4280,6 +4449,8 @@ ul#magicat li .open-close,
 }
 
 
+
+
 /* Sidebar, Block, Data Table */
 
 .sidebar {
@@ -4362,6 +4533,8 @@ ul#magicat li .open-close,
 }
 
 
+
+
 /* Block: Account */
 
 .block-account .block-title {}
@@ -4408,6 +4581,8 @@ ul#magicat li .open-close,
 }
 
 
+
+
 /* Block: Currency Switcher */
 
 .block-currency {}
@@ -4416,6 +4591,8 @@ ul#magicat li .open-close,
     width: 100%;
     margin-right: 8px;
 }
+
+
 
 
 /* Block: Layered Navigation */
@@ -4460,6 +4637,8 @@ ul#magicat li .open-close,
     color: inherit;
     font-size: 13px;
 }
+
+
 
 
 /* Block: Cart */
@@ -4686,9 +4865,13 @@ ul#magicat li .open-close,
 }
 
 
+
+
 /* Block: Wishlist */
 
 .block-wishlist {}
+
+
 
 
 /* Block: Related */
@@ -4802,6 +4985,8 @@ ul#magicat li .open-close,
 }
 
 
+
+
 /* Block: Compare Products */
 
 .block-compare {
@@ -4867,6 +5052,8 @@ ol#compare-items li.last {
     border-bottom: none;
     margin-bottom: 0;
 }
+
+
 
 
 /* Block: Recently Viewed */
@@ -4957,6 +5144,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Block: Recently Compared */
 
 .block-compared .block-content {
@@ -5028,6 +5217,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Block: Poll */
 
 .block-poll {
@@ -5084,6 +5275,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Block: Tags */
 
 .block-tags {
@@ -5112,6 +5305,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Block: Subscribe */
 
 .block-subscribe {
@@ -5132,6 +5327,8 @@ ol#compare-items li.last {
     margin-bottom: 5px;
     color: #222;
 }
+
+
 
 
 /* Block: Recently Viewed */
@@ -5193,6 +5390,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Block: Reorder */
 
 .block-reorder {}
@@ -5209,6 +5408,8 @@ ol#compare-items li.last {
 .block-reorder .product-name {
     margin-left: 20px;
 }
+
+
 
 
 /* Block: Banner */
@@ -5250,6 +5451,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Block: Price */
 
 .block-price {
@@ -5260,6 +5463,8 @@ ol#compare-items li.last {
 .block-price .block-content {
     margin: 15px 0
 }
+
+
 
 
 /* Page Heading */
@@ -5298,6 +5503,8 @@ ol#compare-items li.last {
     text-transform: uppercase;
     margin: auto;
 }
+
+
 
 
 /*--------- 18. Category Description ----------*/
@@ -5432,6 +5639,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Pager */
 
 .pager {
@@ -5497,6 +5706,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Sorter */
 
 .sorter {
@@ -5519,6 +5730,8 @@ ol#compare-items li.last {
     float: left;
     margin-top: 6px;
 }
+
+
 
 
 /* Toolbar */
@@ -5759,6 +5972,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /* Category Toolbar, Pager */
 
 .toolbar .button-list {
@@ -5889,6 +6104,8 @@ ol#compare-items li.last {
 }
 
 
+
+
 /*----------- 19. View Type: Grid ---------- */
 
 .products-grid,
@@ -5935,6 +6152,8 @@ a.link-compare {
     opacity: 0.9;
     z-index: 10000;
 }
+
+
 
 
 /*---------- 20. View Type: List --------- */
@@ -6157,6 +6376,8 @@ li .list {
 }
 
 
+
+
 /*----------- 21. Product Details -----------*/
 
 .product-view .product-img-box {
@@ -6172,6 +6393,8 @@ li .list {
 .product-view .product-img-box .product-image .large-image {
     border: 1px #ddd solid;
 }
+
+
 
 
 /* Product Images */
@@ -6210,6 +6433,8 @@ li .list {
 }
 
 
+
+
 /* More Views SLIDER */
 
 .more-views {
@@ -6246,6 +6471,8 @@ li .list {
     top: 50%;
     background: none;
 }
+
+
 
 
 /*  Product Shop */
@@ -6600,6 +6827,8 @@ li .list {
 }
 
 
+
+
 /* add to cart */
 
 .product-view .product-shop .add-to-box .add-to-cart label {
@@ -6766,6 +6995,8 @@ li .list {
 .slider-controls {
     -webkit-transform: translate3d(0, 0, 0)
 }
+
+
 
 
 /*  Product Collatera */
@@ -6975,6 +7206,8 @@ li .list {
 }
 
 
+
+
 /*detail page view link */
 
 a.button.view-all:before {
@@ -7119,6 +7352,8 @@ a.button.view-all {
 .mini-products-list .price-box .price {
     margin-right: 10px;
 }
+
+
 
 
 /* Product Tabs */
@@ -7501,6 +7736,8 @@ textarea {
 }
 
 
+
+
 /* Product Options */
 
 .product-options {
@@ -7622,6 +7859,8 @@ textarea {
 }
 
 
+
+
 /* Grouped Product */
 
 .product-view .grouped-items-table {
@@ -7631,14 +7870,20 @@ textarea {
 }
 
 
+
+
 /* Block: Description */
 
 .product-view .box-description {}
 
 
+
+
 /* Block: Additional */
 
 .product-view .box-additional {}
+
+
 
 
 /* Block: Upsell */
@@ -7650,6 +7895,8 @@ textarea {
 .product-view .box-up-sell .products-grid td {
     width: 25%;
 }
+
+
 
 
 /* Block: Tags */
@@ -7678,6 +7925,8 @@ textarea {
 }
 
 
+
+
 /* Block: Reviews */
 
 .product-view .box-reviews {}
@@ -7685,9 +7934,13 @@ textarea {
 .product-view .box-reviews .form-add {}
 
 
+
+
 /* Send a Friend */
 
 .send-friend {}
+
+
 
 
 /* Availability, Brand */
@@ -7755,6 +8008,8 @@ textarea {
 }
 
 .availability-only-details tr.odd td.last {}
+
+
 
 
 /* Add to Cart */
@@ -7872,6 +8127,8 @@ textarea {
 }
 
 
+
+
 /*  Add to Links + Add to Cart */
 
 .add-to-box {
@@ -7925,6 +8182,8 @@ textarea {
     margin-left: 5px;
     text-transform: uppercase;
 }
+
+
 
 
 /*  prev-next-products */
@@ -8017,6 +8276,8 @@ textarea {
 }
 
 
+
+
 /* Data Table */
 
 .data-table {
@@ -8063,6 +8324,8 @@ data-table textarea {
 .data-table .description {
     margin: 10px 0;
 }
+
+
 
 
 /*---------- 22. One Page Checkout ---------- */
@@ -8338,6 +8601,8 @@ form-list label.required em {
 }
 
 
+
+
 /* ---------- 23. Dashboard ---------- */
 
 .dashboard {}
@@ -8382,6 +8647,8 @@ form-list label.required em {
 }
 
 
+
+
 /* Content Columns */
 
 .col2-set .col-1 {
@@ -8412,6 +8679,8 @@ form-list label.required em {
     margin-bottom: 5px;
     text-transform: uppercase;
 }
+
+
 
 
 /*---------- 24. Shopping cart table ---------- */
@@ -8732,6 +9001,8 @@ button.button.btn-proceed-checkout span {
 }
 
 
+
+
 /* --------- 25. Wishlist Table ----------- */
 
 #wishlist-table .product-name {
@@ -8868,6 +9139,8 @@ button.button.btn-proceed-checkout span {
 }
 
 
+
+
 /*---------- 26. Progress Bar ------- */
 
 .state_bar {
@@ -8904,6 +9177,8 @@ button.button.btn-proceed-checkout span {
     border: 1px solid #c0ecec;
     color: #333;
 }
+
+
 
 
 /*---------- 27. Multiple Addresses Checkout -----------*/
@@ -9033,6 +9308,8 @@ button.button.btn-proceed-checkout span {
 }
 
 
+
+
 /*--------- 28. Account Login page ---------*/
 
 .account-login {
@@ -9112,6 +9389,8 @@ button.button.btn-proceed-checkout span {
 }
 
 
+
+
 /*---------- 29. 404 Page ---------- */
 
 .content-wrapper {
@@ -9182,6 +9461,8 @@ button.button.btn-proceed-checkout span {
 }
 
 
+
+
 /*--------- 30. Footer -------- */
 
 footer {
@@ -9244,6 +9525,8 @@ ul.contact-info li.last {
 }
 
 
+
+
 /* Brand Logo */
 
 .brand-logo {
@@ -9296,6 +9579,8 @@ ul.contact-info li.last {
 }
 
 
+
+
 /* newsletter */
 
 .newsletter {
@@ -9326,14 +9611,8 @@ ul.contact-info li.last {
 }
 
 button.subscribe {
-    background: none repeat scroll 0 0 #F0AA21;
-    border: 0 none;
-    border-radius: 3px;
-    cursor: pointer;
-    overflow: hidden;
-    padding: 10px 12px !important;
+    background-color: #F0AA21;
     transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
-    margin-left: 5px;
 }
 
 button.subscribe span {
@@ -9352,6 +9631,8 @@ button.subscribe:before {
     display: inline-block;
     margin-right: 5px;
 }
+
+
 
 
 /* Social Icons*/
@@ -9754,6 +10035,8 @@ button.subscribe:before {
 .payments-block {}
 
 
+
+
 /* 31. our-features-box */
 
 .our-features-box {
@@ -9856,6 +10139,8 @@ button.subscribe:before {
 }
 
 
+
+
 /*--------- 32. FLIP 3D --------- */
 
 .col-item .product-wrapper {
@@ -9865,7 +10150,7 @@ button.subscribe:before {
 
 .col-item a.thumb.flip {
     transform-style: preserve-3d;
-    transition: transform 0.5s linear;
+    transition: transform 0.3s linear;
 }
 
 .col-item .thumb-wrapper:hover a.thumb.flip {
@@ -9874,9 +10159,9 @@ button.subscribe:before {
 
 .col-item .product-wrapper a.thumb.flip .face {
     display: block;
-    -webkit-backface-visibility: hidden;
+    /*-webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;*/
     position: relative;
     z-index: 1;
     width: 200px;
@@ -9968,6 +10253,14 @@ a.link-compare:hover {
 
 #featured-slider .owl-carousel .owl-wrapper {
     border-left: 1px #ddd solid;
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
 }
 
 #featured-slider .owl-carousel .owl-item {
@@ -10077,6 +10370,8 @@ a.link-compare:hover {
 
 
 
+
+
 /*------- 33. Global Styles ----- */
 
 
@@ -10086,6 +10381,8 @@ p.control input.checkbox,
 p.control input.radio {
     margin-right: 6px;
 }
+
+
 
 
 /* Grouped fields */
@@ -10320,6 +10617,8 @@ input.radio {
 }
 
 
+
+
 /* All Buttons Icons */
 
 .returns:before {
@@ -10546,6 +10845,8 @@ button.button span {
 }
 
 
+
+
 /* Delivery */
 
 .img-responsive,
@@ -10603,6 +10904,8 @@ button.button span {
 }
 
 
+
+
 /* FAQ */
 
 .accordion-faq {
@@ -10658,6 +10961,8 @@ button.button span {
 }
 
 
+
+
 /* compare */
 
 .compare-table .product-shop-row td {
@@ -10691,6 +10996,8 @@ button.button span {
 a.btn-cart {
     color: #333;
 }
+
+
 
 
 /* Newsletter */
@@ -10820,6 +11127,8 @@ h4.trigger {
 }
 
 
+
+
 /* Sitemap */
 
 .cart .page-title {
@@ -10874,6 +11183,8 @@ h3.product-name a:hover {
     text-decoration: none;
     color: #A7CF47;
 }
+
+
 
 
 /*--------- 34. Responsive -------- */
@@ -10945,6 +11256,7 @@ h3.product-name a:hover {
     }
     #mobile-menu ul.navmenu ul.submenu {
         padding: 5px 0 0;
+        top: 53px;
         background: #2d5290;
     }
     ul.topnav li {
@@ -10962,6 +11274,7 @@ h3.product-name a:hover {
         z-index: 3;
         position: absolute;
         left: 0px;
+        top: 53px;
         width: 100%;
     }
     .footer-primary-bottom .social {
@@ -11819,6 +12132,7 @@ h3.product-name a:hover {
         text-align: left;
         z-index: 2;
         position: absolute;
+        top: 55px;
         left: 0px;
         width: 100%;
         padding: 5px 0 0;
@@ -11843,6 +12157,7 @@ h3.product-name a:hover {
         border-bottom: none !important;
         padding: 15px;
     }
+
     .owl-carousel .owl-wrapper {
         border: none !important;
     }
@@ -12331,7 +12646,7 @@ h3.product-name a:hover {
     .toplinks {
         margin-right: 30px;
     }
-/*    .search-box {
+    /*    .search-box {
         width: 75%;
         position: absolute;
         top: 20px;
