@@ -1,16 +1,16 @@
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.2/css/bootstrap.min.css">
-
 <link rel="stylesheet" href="<?=SITEURL?>css/formValidation.min.css">
 
 <script src="http://cdn.jsdelivr.net/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
 
 <script src="<?=SITEURL?>js/formValidation.min.js" type="text/javascript"></script>
 
+<script src="https://cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/framework/bootstrap.min.js"></script>
 
 
+		<div id="alertContainer"></div>
 
 
 		<form accept-charset="UTF-8" id="contactForm" class="contact-form " action="#" method="post">
@@ -23,7 +23,7 @@
 
 				<div class="col-sm-12 form-group" style="margin-bottom: 0;">
 
-					<label class="col-xs-12 control-label">Your Name:</label>
+					<label class="control-label">Your Name:</label>
 
 
 
@@ -35,7 +35,7 @@
 
 				<div class="col-sm-12 form-group" style="margin-bottom: 0;">
 
-					<label class="col-xs-12 control-label">Company:</label>
+					<label class="control-label">Company:</label>
 
 					<input type="text" name="txtCompany" id="txtCompany" class="col-xs-12 form-control hint">
 
@@ -49,7 +49,7 @@
 
 				<div class="col-sm-12 form-group" style="margin-bottom: 0;">
 
-					<label class="col-xs-12 control-label">Email:</label>
+					<label class="control-label">Email:</label>
 
 					<input type="email" name="txtEmail" id="txtEmail" class="col-xs-12 form-control hint">
 
@@ -57,7 +57,7 @@
 
 				<div class="col-sm-12 form-group" style="margin-bottom: 0;">
 
-					<label class="col-xs-12 control-label">Phone Number:</label>
+					<label class="control-label">Phone Number:</label>
 
 					<input type="telephone" name="txtPhone" id="txtPhone" class="col-xs-12 form-control hint">
 
@@ -81,7 +81,7 @@
 
 				<div class="col-sm-12 form-group" style="margin-bottom: 0;">
 
-					<label class="col-xs-12 control-label">Message:</label>
+					<label class="control-label">Message:</label>
 
 					<textarea  name="txtMessage" id="txtMessage" cols="75" rows="5" class="col-xs-12 form-control hint"></textarea>
 
@@ -101,7 +101,7 @@
 
 
 
-					<label class="col-xs-12 control-label">Security Code :</label>
+					<label class="control-label">Security Code :</label>
 
 					<label class="col-xs-6 control-label" id="captchaOperation" style="font-size: 22px; width: 75px;" ></label>
 
@@ -377,40 +377,9 @@
 
 				var msg = $form.find('[name="txtMessage"]').val(); // get message field value
 
-				var subject ='New Inquiry from Website' + ' ' + $form.find('[name="txtSubject"]').val(); // get subject field value
+				var phone = $form.find('[name="txtPhone"]').val(); // get phone field value
 
-
-
-				var email_content =  '<strong>Name :</strong> ' + ($form.find('[name="txtName"]').val() || 'n/a') + '<br>';
-
-				email_content = email_content + '<strong>Company :</strong> ' + ($form.find('[name="txtCompany"]').val() || 'n/a')+ '<br>';
-
-				email_content = email_content + '<strong>Email :</strong> ' + ($form.find('[name="txtEmail"]').val() || 'n/a')+ '<br>';
-
-				email_content = email_content + '<strong>Phone :</strong> ' + ($form.find('[name="txtPhone"]').val() || 'n/a')+ '<br>';
-
-				email_content = email_content + ''+ '<br>';
-
-				email_content = email_content + '<strong>Category :</strong> ' + ($form.find('[name="pc_title1"]').val() || 'n/a')+ '<br>';
-
-				email_content = email_content + '<strong>Sub-Category :</strong> ' + ($form.find('[name="psubc_title1"]').val() || 'n/a')+ '<br>';
-
-				email_content = email_content + '<strong>Product :</strong> ' + ($form.find('[name="p_title1"]').val() || 'n/a')+ '<br>';
-
-				email_content = email_content + '<strong>Product Code :</strong> ' + ($form.find('[name="p_code"]').val() || 'n/a')+ '<br>';
-
-				email_content = email_content + ''+ '<br>';
-
-				email_content = email_content + '<strong>Message:</strong> ';
-
-				email_content = email_content + $form.find('[name="txtMessage"]').val();
-
-
-
-
-
-
-
+				var company = $form.find('[name="txtCompany"]').val(); // get company field value
 
 
 				$.ajax(
@@ -419,41 +388,15 @@
 
 						type: "POST",
 
-						url: "https://mandrillapp.com/api/1.0/messages/send.json",
+						url: "/api/email/quickEmail.php",
 
 						data: {
 
-							'key': 'ryaYTIqFJOyK0FqYOnzx5w',
-
-							'message': {
-
-								'from_email': email,
-
-								'from_name': name,
-
-								'headers': {
-
-									'Reply-To': email
-
-								},
-
-								'subject': subject,
-
-								'html': email_content,
-
-								'to': [
-
-									{
-
-										'email': 'hitul@netlink-india.com',
-
-										'name': 'Netlink Technologies',
-
-										'type': 'to'
-
-									}]
-
-							}
+							name: name,
+							email: email,
+							phone : phone,
+							company: company,
+							comments : msg,
 
 						}
 
@@ -499,6 +442,10 @@
 
 							.show();
 
+						setTimeout(function(){ 
+							$('#alertContainer').fadeOut("slow"); 
+						}, 3000);
+
 					}).fail(function (jqXHR, textStatus, errorThrown) {
 
 						$('#alertContainer')
@@ -510,6 +457,10 @@
 							.html('Sorry, cannot send the message')
 
 							.show();
+
+						setTimeout(function(){ 
+							$('#alertContainer').fadeOut("slow"); 
+						}, 3000);
 
 					});
 
