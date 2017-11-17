@@ -1,3 +1,4 @@
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
 <link rel="stylesheet" href="<?=SITEURL?>css/formValidation.min.css">
@@ -11,6 +12,10 @@
 
 
 		<form accept-charset="UTF-8" id="contactForm" class="contact-form " action="#" method="post">
+
+
+
+
 
 			<div class="row">
 
@@ -374,6 +379,12 @@
 
 				var company = $form.find('[name="txtCompany"]').val(); // get company field value
 
+				var category = $('#pc_title1').val(); // get category field value
+
+				var subcategory = $('#psubc_title1').val(); // get subcategory field value
+
+				var product = $('#p_title1').val(); // get product field value
+
 
 				$.ajax(
 
@@ -381,7 +392,7 @@
 
 						type: "POST",
 
-						url: "/api/email/quickEmail.php",
+						url: "/api/email/quickEmailProduct.php",
 
 						data: {
 
@@ -389,6 +400,9 @@
 							email: email,
 							phone : phone,
 							company: company,
+							category: category,
+							subcategory: subcategory,
+							product: product,
 							comments : msg,
 
 						}

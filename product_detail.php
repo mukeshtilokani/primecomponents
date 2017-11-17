@@ -121,6 +121,8 @@
 										<div class="product-shop col-sm-6 col-xs-12">
 											<div class="product-name">
 												<h1><?= urldecode( htmlspecialchars_decode( $valueProdData->p_title ) ) ?></h1>
+
+												<input type="hidden" id="p_title1" value="<?= urldecode( htmlspecialchars_decode( $valueProdData->p_title ) ) ?>">
 											</div>
 
 											<div style="float: right" id="purchase">
@@ -149,6 +151,8 @@
 														<?= urldecode( htmlspecialchars_decode( $valueProdData->pc_title ) ) ?></a>
 												</div>
 
+										<input type="hidden" id="pc_title1" value="<?= urldecode( htmlspecialchars_decode( $valueProdData->pc_title ) ) ?>" />
+
 												<?php if($valueProdData->psubc_id > 0) {  ?>
 												<div class="product_vendor">Sub-Category:
 													<a href="
@@ -158,7 +162,12 @@
 													   title="">
 														<?= urldecode( htmlspecialchars_decode( $valueProdData->psubc_title ) ) ?></a>
 												</div>
-										<?php }  ?>
+
+												<input type="hidden" id="psubc_title1" value="<?= urldecode( htmlspecialchars_decode( $valueProdData->psubc_title ) ) ?>" />
+										<?php } else {  ?>
+											<input type="hidden" id="psubc_title1" value="" />
+										<?php } ?>
+
 
 											</div>
 
@@ -210,7 +219,7 @@
 							<div class="block block-company">
 								<div class="block-title">Inquire Now!</div>
 								<div class="block-content" style="padding: 20px !important;">
-									<?php include( "include/quickContact.php" ); ?>
+									<?php include( "include/quickContactProduct.php" ); ?>
 								</div>
 							</div>
 						</aside>
