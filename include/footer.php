@@ -6,7 +6,7 @@
                 <div class="col-lg-4">
                     <div class="footer-logo">
                         <a href="<?=SITEURL?>" title="Logo">
-                            <img src="/images/footer-logo.png" alt="logo" class="img-fluid">
+                            <img src="/images/footer-logo.png" alt="logo" class="img-fluid" style="width: 150px">
                         </a>
                     </div>
                     <p>Manufacturer of PCB Terminal Blocks, Edge Connectors, Fuse Holders, Rotary Switches, Rocker Switches, Push Connectors, Sub-Miniature, Ballasts, etc. </p>
@@ -67,15 +67,19 @@
                         <li class="googleplus"><a href="#"></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-8 block-subscribe">
+                <!-- <div class="col-lg-8 block-subscribe">
                     <div class="newsletter my-3">
-                        <form class="form-group d-flex justify-content-center">
+                        <form class="form-group d-flex flex-wrap justify-content-center">
                             <h4>Sign up for emails</h4>
-                            <input type="text" placeholder="Enter your email address" class="input-text required-entry validate-email" title="Sign up for our newsletter" id="newsletter1" name="email">
-                            <button class="subscribe" title="Subscribe" type="submit"><span>Subscribe</span></button>
+                            <div class="input-group">
+                                <input type="text" class="form-control required-entry validate-email" placeholder="Enter your email address" title="Sign up for our newsletter" id="newsletter1" name="email">
+                                <span class="input-group-btn">
+                                    <button id=""  title="Subscribe" type="submit" class="btn round btn-primary search-btn-bg">Subscribe</button>
+                                </span>
+                            </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
