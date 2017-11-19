@@ -1,6 +1,14 @@
 <?php include( "include/header.php" ); ?>
 <?php include( "include/body.php" ); ?>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<link rel="stylesheet" href="<?=SITEURL?>css/formValidation.min.css">
+
+<script src="<?=SITEURL?>js/formValidation.min.js" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/framework/bootstrap.min.js"></script>
+
 <div class="breadcrumbs">
 	<div class="container">
 		<div class="row">
@@ -20,79 +28,107 @@
 				<div class="page-title">
 					<h2>Contact Us</h2>
 				</div>
-				<fieldset class="group-select">
-					<ul>
-						<li id="billing-new-address-form">
-							<fieldset>
-								<legend>New Address</legend>
-								<input type="hidden" name="billing[address_id]" value="" id="billing:address_id">
-								<ul>
-									<li>
-										<div class="customer-name">
-											<div class="input-box name-firstname">
-												<label for="billing:firstname"> First Name<span
-														class="required">*</span></label>
-												<br>
-												<input type="text" id="billing:firstname" name="billing[firstname]"
-												       value="" title="First Name" class="input-text ">
-											</div>
-											<div class="input-box name-lastname">
-												<label for="billing:lastname"> Email Address <span class="required">*</span>
-												</label>
-												<br>
-												<input type="text" id="billing:lastname" name="billing[lastname]"
-												       value="" title="Last Name" class="input-text">
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="input-box">
-											<label for="billing:company">Company</label>
-											<br>
-											<input type="text" id="billing:company" name="billing[company]" value=""
-											       title="Company" class="input-text">
-										</div>
-										<div class="input-box">
-											<label for="billing:email">Telephone <span
-													class="required">*</span></label>
-											<br>
-											<input type="text" name="billing[email]" id="billing:email" value=""
-											       title="Email Address" class="input-text validate-email">
-										</div>
-									</li>
-									<li>
-										<label>Address <span class="required">*</span></label>
-										<br>
-										<input type="text" title="Street Address" name="billing[street][]"
-										       id="billing:street1" value="" class="input-text required-entry">
-									</li>
-									<li>
-										<input type="text" title="Street Address 2" name="billing[street][]"
-										       id="billing:street2" value="" class="input-text required-entry">
-									</li>
-									<li class="">
-										<label for="comment">Comment<em class="required">*</em></label>
-										<br>
+				<form accept-charset="UTF-8" id="contactForm" class="contact-form " action="#" method="post">
 
-										<div style="float:none" class="">
-											<textarea name="comment" id="comment" title="Comment"
-											          class="required-entry input-text" cols="5"
-											          rows="3"></textarea>
-										</div>
-									</li>
-								</ul>
-							</fieldset>
-						</li>
-						<li><p class="require"><em class="required">* </em>Required Fields</p>
-							<input type="text" name="hideit" id="hideit" value="" style="display:none !important;">
+					<div class="row">
 
-							<div class="buttons-set">
-								<button type="submit" title="Submit" class="button submit"><span> Submit </span>
-								</button>
+						<div class="col-sm-12 form-group">
+
+							<label class="control-label">Your Name:</label>
+
+							<input type="text" class="col-xs-12 form-control hint" name="txtName" id="txtName"  />
+
+
+						</div>
+					</div>
+					<div class="row">
+
+						<div class="col-sm-12 form-group">
+
+							<label class="control-label">Company:</label>
+
+							<input type="text" name="txtCompany" id="txtCompany" class="col-xs-12 form-control hint">
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-12 form-group">
+
+							<label class="control-label">Email:</label>
+
+							<input type="email" name="txtEmail" id="txtEmail" class="col-xs-12 form-control hint">
+
+						</div>
+					</div>
+					<div class="row">
+
+						<div class="col-sm-12 form-group">
+
+							<label class="control-label">Phone Number:</label>
+
+							<input type="telephone" name="txtPhone" id="txtPhone" class="col-xs-12 form-control hint">
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-12 form-group">
+
+							<label class="control-label">Address:</label>
+
+							<input type="text" name="txtAddress" id="txtAddress" class="col-xs-12 form-control hint">
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-12 form-group">
+
+							<label class="control-label">Message:</label>
+
+							<textarea  name="txtMessage" id="txtMessage" cols="75" rows="5" class="col-xs-12 form-control hint"></textarea>
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-12 form-group">
+
+							<label class="control-label">Security Code :</label>
+
+							<label class="col-xs-6 control-label" id="captchaOperation" style="font-size: 22px; width: 75px;" ></label>
+
+							<input type="text" class="form-control" name="captcha" style="width: 100px;" />
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-3 form-group">
+
+							<div class="col-xs-12 ">
+
+								<button type="submit" class="subscribe"><span>Submit</span></button>
 							</div>
-						</li>
-					</ul>
-				</fieldset>
+
+						</div>
+
+					</div>
+
+				</form>
+
+				<div id="alertContainer"></div>
 			</section>
 			<aside class="col-right sidebar col-lg-4 wow bounceInUp animated">
 				<div class="block block-company">
@@ -119,6 +155,308 @@
 	</div>
 </div>
 <!--End main-container -->
+
+<script>
+	$(document).ready(function() {
+		jQuery.noConflict();
+		// Generate a simple captcha
+
+		function randomNumber(min, max) {
+			return Math.floor(Math.random() * (max - min + 1) + min);
+		}
+
+		function stringGen(len)
+		{
+
+			var text = " ";
+			var charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+
+			for( var i=0; i < len; i++ )
+				text += charset.charAt(Math.floor(Math.random() * charset.length));
+
+			return text;
+		}
+
+		function generateCaptcha() {
+
+			//$('#captchaOperation').html([randomNumber(1, 9), '+', randomNumber(1, 9), '='].join(' '));
+
+			$('#captchaOperation').html([ stringGen(4), '='].join(' '));
+
+		}
+
+
+
+		generateCaptcha();
+
+		$('#contactForm')
+
+			.formValidation({
+
+				framework: 'bootstrap',
+
+				icon: {
+
+					valid: 'glyphicon glyphicon-ok',
+
+					invalid: 'glyphicon glyphicon-remove',
+
+					validating: 'glyphicon glyphicon-refresh'
+
+				},
+
+				fields: {
+
+					txtName: {
+
+						validators: {
+
+							notEmpty: {
+
+								message: 'Your Name is required'
+
+							}
+
+						}
+
+					},
+
+					txtCompany: {
+
+						validators: {
+
+							notEmpty: {
+
+								message: 'Company Name is required'
+
+							}
+
+						}
+
+					},
+					txtAddress: {
+
+						validators: {
+
+							notEmpty: {
+
+								message: 'Address is required'
+
+							}
+
+						}
+
+					},
+
+					txtPhone: {
+
+						validators: {
+
+							notEmpty: {
+
+								message: 'The phone number is required'
+
+							},
+
+							regexp: {
+
+								message: 'The phone number can only contain the digits, spaces, -, (, ), + and .',
+
+								regexp: /^[0-9\s\-()+\.]+$/
+
+							}
+
+						}
+
+					},
+
+					txtEmail: {
+
+						validators: {
+
+							notEmpty: {
+
+								message: 'The email address is required'
+
+							},
+
+							emailAddress: {
+
+								message: 'The input is not a valid email address'
+
+							}
+
+						}
+
+					},
+
+					message: {
+
+						validators: {
+
+							notEmpty: {
+
+								message: 'The message is required'
+
+							},
+
+							stringLength: {
+
+								max: 700,
+
+								message: 'The message must be less than 700 characters long'
+
+							}
+
+						}
+
+					},
+
+					captcha: {
+
+						validators: {
+
+							callback: {
+
+								message: 'Wrong answer',
+
+								callback: function (value, validator, $field) {
+
+									var items = $('#captchaOperation').html().split(' '),
+
+										sum = items[1];
+
+
+									return value == sum;
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			})
+
+			.on('err.form.fv', function (e) {
+
+				// Regenerate the captcha
+
+				generateCaptcha();
+
+			})
+
+			.on('success.form.fv', function (e) {
+
+				// Prevent default form submission
+
+				e.preventDefault();
+
+				var $form = $(e.target);
+
+				var email = $form.find('[name="txtEmail"]').val(); // get email field value
+
+				var name = $form.find('[name="txtName"]').val(); // get name field value
+
+				var msg = $form.find('[name="txtMessage"]').val(); // get message field value
+
+				var phone = $form.find('[name="txtPhone"]').val(); // get phone field value
+
+				var address = $form.find('[name="txtAddress"]').val(); // get phone field value
+
+				var company = $form.find('[name="txtCompany"]').val(); // get company field value
+
+
+				$.ajax(
+
+					{
+
+						type: "POST",
+
+						url: "/api/email/submitContactEmail.php",
+
+						data: {
+
+							name: name,
+							email: email,
+							phone : phone,
+							company: company,
+							address: address,
+							comments : msg,
+						}
+
+					})
+
+					.done(function (response) {
+
+						// Clear the form
+
+						$form.formValidation('resetForm', true);
+
+						$form.find('[name="txtMessage"]').val('');
+
+
+
+						// Regenerate the captcha
+
+						generateCaptcha();
+
+
+
+						// Show the message
+
+						response.status === 'error'
+
+							? $('#alertContainer')
+
+							.removeClass('alert-success')
+
+							.addClass('alert-warning')
+
+							.html('Sorry, cannot send the message')
+
+							.show()
+
+							: $('#alertContainer')
+
+							.removeClass('alert-warning')
+
+							.addClass('alert-success')
+
+							.html('Your message has been successfully sent')
+
+							.show();
+
+						setTimeout(function(){ 
+							$('#alertContainer').fadeOut("slow"); 
+						}, 3000);
+
+					}).fail(function (jqXHR, textStatus, errorThrown) {
+
+						$('#alertContainer')
+
+							.removeClass('alert-success')
+
+							.addClass('alert-warning')
+
+							.html('Sorry, cannot send the message')
+
+							.show();
+
+						setTimeout(function(){ 
+							$('#alertContainer').fadeOut("slow"); 
+						}, 3000);
+
+					});
+
+			});
+
+	});
+
+</script>
 
 
 <?php include( "include/footer.php" ); ?>
