@@ -1,6 +1,3 @@
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-
 <link rel="stylesheet" href="<?=SITEURL?>css/formValidation.min.css">
 
 <script src="<?=SITEURL?>js/formValidation.min.js" type="text/javascript"></script>
@@ -141,8 +138,6 @@
 <script>
 
 	$(document).ready(function() {
-
-		jQuery.noConflict();
 		// Generate a simple captcha
 
 		function randomNumber(min, max) {

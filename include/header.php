@@ -58,10 +58,11 @@
 	<link rel="stylesheet" href="<?=SITEURL?>css/flexslider.css" type="text/css">
 	<link rel="stylesheet" href="<?=SITEURL?>css/fancybox.css" type="text/css">
 
-
-
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="<?=SITEURL?>js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?=SITEURL?>js/bootstrap.min.js"></script>
 </head>
 
 
