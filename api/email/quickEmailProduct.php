@@ -36,148 +36,79 @@ $mail->addAddress('mukeshtilokani@gmail.com', 'Administrator');
 
 //Set the subject line
 
-$mail->Subject = 'Website Inquiry'; 
-        
-
-        $body='
-
-            <div style="color:#fff; background-color:#F9F9F9; font-family:Century Gothic,sans-serif; max-height:60px;  ">
-
-             <img  src="http://prime.demowebsite.in/images/logo.jpg" alt="Prime Components" border="0" style="padding:0              !important;margin:0 !important;height:60px;" title="Prime Components"/></div>
-
-
-
-<div style=" clear:both; color:#004895;border:solid 1px #ccc; background-color:#ffffff; font-family:Century Gothic,sans-serif; font-size:14px; ">
-
-  <div style="  padding:10px 20px 20px 20px; color:#424242; ">Hi Rajan Shah ,<br /><br />
-
-  Following website visitor wants to get in touch with you<br />
-
-  Visitor details are as follows :<br><br>
-
-  
-
-   <div style="padding:10px 20px 20px 20px; color:#424242; ">
-
-        <div style="display:table-row"> 
-
-          <div style="display:table-cell"><strong>Name</strong> </div>
-
-          <div style="display:table-cell"> <strong>:</strong> </div>
-
-          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['name'].'</div>
-
-        </div>
-
-      <div style="display:table-row"> 
-
-          <div style="display:table-cell"><strong>Company</strong> </div>
-
-          <div style="display:table-cell"> <strong>:</strong> </div>
-
-          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['company'].'</div>
-
-        </div>
-
-		  <div style="display:table-row"> 
-
-          <div style="display:table-cell"><strong>Email</strong> </div>
-
-          <div style="display:table-cell"> <strong>:</strong> </div>
-
-          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['email'].'</div>
-
-        </div>
-
-      <div style="display:table-row"> 
-
-          <div style="display:table-cell"><strong>Phone</strong> </div>
-
-          <div style="display:table-cell"> <strong>:</strong> </div>
-
-          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['phone'].'</div>
-
-        </div>
-
-        <div style="display:table-row"> 
-
-          <div style="display:table-cell"><strong>Category</strong> </div>
-
-          <div style="display:table-cell"> <strong>:</strong> </div>
-
-          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['category'].'</div>
-
-        </div>
-
-        <div style="display:table-row"> 
-
-          <div style="display:table-cell"><strong>Sub-Category</strong> </div>
-
-          <div style="display:table-cell"> <strong>:</strong> </div>
-
-          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['subcategory'].'</div>
-
-        </div>
-
-        <div style="display:table-row"> 
-
-          <div style="display:table-cell"><strong>Product</strong> </div>
-
-          <div style="display:table-cell"> <strong>:</strong> </div>
-
-          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['product'].'</div>
-
-        </div>
-
-        <div style="display:table-row"> 
-
-          <div style="display:table-cell"><strong>Message</strong> </div>
-
-          <div style="display:table-cell"> <strong>:</strong> </div>
-
-          <div style="display:table-cell">&nbsp;&nbsp;'.$_POST['comments'].'</div>
-
-        </div>
-
-    </div>
-
-  <br /><br />
-
-    With Warm Regards,<br /><br />
-
-    <strong>Rajan Shah</strong>
-
-    <br />
-
-	
-
-	Prime Components<br>	​
-
-	830 GIDC Estate, Makarpura,<br>	​​
-
-	Baroda, Gujarat 390010, India<br>
-
-    
-
-  
-
-  
-
-   
-
-  <div style="border-bottom: 4px solid #ccc;color: #444444;font-size: 11px;font-weight: bold;line-height: 0;padding: 2px 20px 15px;text-align: right;"> Lead Capture Powered by 
-
-  
-
-  <a href="http://www.shivamnetwork.com" target="_blank" style="color:#444"><img  src="http://prime.demowebsite.in/images/shivamnetwork_logo.png" alt="Shivam Network" border="0" style="padding:0 !important;margin:0 !important;height:30px;" title="Shivam Network"/></a> 
-
-              
-
-  </div>';    
-
-  
-
-  //Read an HTML message body from an external file, convert referenced images to embedded,
+$mail->Subject = 'Website Inquiry';
+
+
+$body = '<div class="mj-container" style="background-color:#eee;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align:top;width:600px;">
+      <![endif]--><div class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]-->
+      <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:10px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="width:600px;">
+      <![endif]--><div style="margin:0px auto;border-radius:5px;max-width:600px;background:#fff;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;border-radius:5px;background:#fff;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;padding-bottom:0px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align:top;width:600px;">
+      <![endif]--><div class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:250px;"><a href="http://primecomponents.net/" target="_blank"><img alt="" title="" height="auto" src="http://primecomponents.net/images/logo.png" style="border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;width:100%;height:auto;" width="250"></a></td></tr></tbody></table></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:600px;">
+      <![endif]--><div style="margin:0px auto;border-radius:5px;max-width:600px;background:#fff;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;border-radius:5px;background:#fff;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align:middle;width:600px;">
+      <![endif]--><div class="mj-column-per-100 outlook-group-fix" style="vertical-align:middle;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" style="vertical-align:middle;" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="left"><div style="cursor:auto;color:#555;font-family:\'Droid Sans\', sans-serif;font-size:16px;font-weight:300;line-height:24px;text-align:left;"><p>Hello Mr. Rajan,<br>Following website visitor wants to get in touch with you. Visitor details are as follows :<br><br>
+                <span><b>Name :</b></span> '.$_POST['name'].'<br>
+                <span><b>Company  :</b></span> '.$_POST['company'].'<br>
+                <span><b>Email  :</b></span> '.$_POST['email'].'<br>
+                <span><b>Phone  :</b></span> '.$_POST['phone'].'<br>
+                <span><b>Category  :</b></span> '.$_POST['category'].'<br>
+                <span><b>Sub-Category  :</b></span> '.$_POST['subcategory'].'<br>
+                <span><b>product  :</b></span> '.$_POST['product'].'<br>
+                <span><b>Message  :</b></span> '.$_POST['comments'].'<br>
+              </p></div></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:600px;">
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align:top;width:600px;">
+      <![endif]--><div class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="center"><div style="cursor:auto;color:#555;font-family:\'Droid Sans\', sans-serif;font-size:16px;font-weight:300;line-height:24px;text-align:center;"><p style="line-height:14px">
+        <small>© 2017 Prime Components, All rights reserved.
+        </small>
+      </p></div></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></div>';
+
+//Read an HTML message body from an external file, convert referenced images to embedded,
 
 //convert HTML into a basic plain-text alternative body
 
@@ -221,59 +152,72 @@ $mail->addAddress($_POST['email'], $_POST['name']);
 
 $mail->Subject = 'Thank you for contacting Prime Components'; 
 
- $body='
-
-             <div style="color:#fff; background-color:#F9F9F9; font-family:Century Gothic,sans-serif; max-height:60px;  ">
-
-             <img  src="http://prime.demowebsite.in/images/logo.jpg" alt="Prime Components" border="0" style="padding:0              !important;margin:0 !important;height:60px" title="Prime Components"/></div>
-
-
-
-              <div style=" clear:both; color:#004895;border:solid 1px #ccc; background-color:#ffffff; font-family:Century Gothic,sans-serif;              font-size:14px; ">
-
-              <div style="padding:10px 20px 20px 20px; color:#424242; ">Hi '.$_POST['name'].',<br /><br />
-
-              Thank you for your interest in Prime Components.<br /><br/>  
-
-              
-
-
-
-              
-
-              We will be in touch with you shortly.<br>
-
-              
-
-              
-
-               With Warm Regards,<br /><br />
-
-				<strong>Rajan Shah</strong>
-
-    <br />
-
-	
-
-	Prime Components<br>	​
-
-	830/2 GIDC Estate, Makarpura,<br>	​​
-
-	Baroda, Gujarat 390010, India<br>
-
-	 
-
-   
-
-   <div style="border-bottom: 4px solid #ccc;color: #444444;font-size: 11px;font-weight: bold;line-height: 0;padding: 2px 20px 15px;text-align: right;"> Lead Capture Powered by 
-
-  
-
-  <a href="http://www.shivamnetwork.com" target="_blank" style="color:#444"><img  src="http://prime.demowebsite.in/images/shivamnetwork_logo.png" alt="Shivam Network" border="0" style="padding:0 !important;margin:0 !important;height:30px;" title="Shivam Network"/></a> 
-
-              
-
-  </div>';
+$body = '<div class="mj-container" style="background-color:#eee;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align:top;width:600px;">
+      <![endif]--><div class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]-->
+      <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:10px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="width:600px;">
+      <![endif]--><div style="margin:0px auto;border-radius:5px;max-width:600px;background:#fff;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;border-radius:5px;background:#fff;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;padding-bottom:0px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align:top;width:600px;">
+      <![endif]--><div class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:250px;"><a href="http://primecomponents.net/" target="_blank"><img alt="" title="" height="auto" src="http://primecomponents.net/images/logo.png" style="border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;width:100%;height:auto;" width="250"></a></td></tr></tbody></table></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:600px;">
+      <![endif]--><div style="margin:0px auto;border-radius:5px;max-width:600px;background:#fff;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;border-radius:5px;background:#fff;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align:middle;width:600px;">
+      <![endif]--><div class="mj-column-per-100 outlook-group-fix" style="vertical-align:middle;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" style="vertical-align:middle;" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="left"><div style="cursor:auto;color:#555;font-family:\'Droid Sans\', sans-serif;font-size:16px;font-weight:300;line-height:24px;text-align:left;"><p>Hi '.$_POST['name'].',<br>
+              Thank you for your interest in Prime Components.<br>We will be in touch with you shortly.<br><br>With Warm Regards,<br>
+                <strong>Rajan Shah</strong>
+    <br>
+  Prime Components<br>
+  830/2 GIDC Estate, Makarpura,<br>
+  Baroda, Gujarat 390010, India<br>
+              </p></div></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:600px;">
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;"><!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align:top;width:600px;">
+      <![endif]--><div class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="center"><div style="cursor:auto;color:#555;font-family:\'Droid Sans\', sans-serif;font-size:16px;font-weight:300;line-height:24px;text-align:center;"><p style="line-height:14px">
+        <small>© 2017 Prime Components, All rights reserved.
+        </small>
+      </p></div></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></div>';
 
 $mail->msgHTML($body);
 
@@ -283,7 +227,7 @@ $mail->msgHTML($body);
 $mail->send();
 
 
-return json_encode(array('status' => 'success'))
+return json_encode(array('status' => 'success'));
 
 ?>
 
