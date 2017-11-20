@@ -100,8 +100,6 @@
 
 </div>
 <!-- JavaScript -->
-<script type="text/javascript" src="<?=SITEURL?>js/jquery.min.js"></script>
-<script type="text/javascript" src="<?=SITEURL?>js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?=SITEURL?>js/parallax.js"></script>
 <script type="text/javascript" src="<?=SITEURL?>js/common.js"></script>
 <script type="text/javascript" src="<?=SITEURL?>js/slider.js"></script>
