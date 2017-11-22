@@ -1,6 +1,5 @@
 <?php include( "include/header.php" ); ?>
 <?php include( "include/body.php" ); ?>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <link rel="stylesheet" href="<?=SITEURL?>css/formValidation.min.css">
 <script src="<?=SITEURL?>js/formValidation.min.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/framework/bootstrap.min.js"></script>
@@ -106,7 +105,6 @@
 <!--End main-container -->
 <script>
 	$(document).ready(function() {
-		jQuery.noConflict();
 		// Generate a simple captcha
 		function randomNumber(min, max) {
 			return Math.floor(Math.random() * (max - min + 1) + min);
@@ -175,7 +173,7 @@
 							}
 						}
 					},
-					message: {
+					txtMessage: {
 						validators: {
 							notEmpty: {
 								message: 'The message is required'

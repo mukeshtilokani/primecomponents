@@ -111,7 +111,7 @@
 							}
 						}
 					},
-					message: {
+					txtMessage: {
 						validators: {
 							notEmpty: {
 								message: 'The message is required'

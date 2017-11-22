@@ -278,7 +278,7 @@
 
 					},
 
-					message: {
+					txtMessage: {
 
 						validators: {
 
