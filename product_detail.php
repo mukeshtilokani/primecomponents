@@ -69,7 +69,7 @@
 								<div class="product-essential">
 									<form action="#" method="post" id="product_addtocart_form" class="row">
 
-										<div class="product-img-box col-sm-6 col-xs-12">
+										<div class="product-img-box col-md-6 col-xs-12">
 											<!--										<div class="new-label new-top-left"> New </div>-->
 											<div class="product-image">
 												<div class="large-image">
@@ -118,7 +118,7 @@
 
 											<div class="clear"></div>
 										</div>
-										<div class="product-shop col-sm-6 col-xs-12">
+										<div class="product-shop col-md-6 col-xs-12">
 											<div class="product-name">
 												<h1><?= urldecode( htmlspecialchars_decode( $valueProdData->p_title ) ) ?></h1>
 
