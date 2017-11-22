@@ -41,11 +41,11 @@
 								for ( $j = 0; $j < count( $rows1 ); $j ++ ) { ?>
 						<!-- Item -->
 						<div class="item" style="border: 1px solid #ccc">
-							<a href="<?= SITEURL ?>products/<?= $rows1[ $j ]['pc_alias'] ?> " >
+							<a href="<?= SITEURL ?>category/<?= $rows1[ $j ]['pc_alias'] ?> " >
 								<img src="<?= SITEURL ?>images/cat/thumb/<?= $rows1[ $j ]['pc_image'] ?>" alt="Image" style="max-width: 130px;max-height: 175px;" >
 							</a>
 							<div style="background: #F0AA21; color: #fff; width: 100%; padding-top: 5px; padding-bottom: 5px;">
-								<a href="<?= SITEURL ?>products/<?= $rows1[ $j ]['pc_alias'] ?>" style="color: #323232;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); font-weight: bold ">
+								<a href="<?= SITEURL ?>category/<?= $rows1[ $j ]['pc_alias'] ?>" style="color: #323232;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); font-weight: bold ">
 									<?= urldecode( $rows1[ $j ]['pc_title'] ) ?>
 								</a>
 							</div>
