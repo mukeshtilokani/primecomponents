@@ -134,7 +134,7 @@
 												   title="Print" target="_blank" href="<?= SITEURL ?>images/pdf/<?= urldecode( htmlspecialchars_decode( $valueProdData->p_catalog_file ) ) ?>"><i style="color: #333"  class="fa fa-print"></i> </a>
 												<a class="btn" style="background: #fff !important;border:1px solid #eee !important; font-size: 20px !important;"
 												   title="Email"
-												   href="mailto:sales@netlink-india.com?subject=Order <?= urldecode( htmlspecialchars_decode( $valueProdData->p_code ) ) ?> :: <?= urldecode( htmlspecialchars_decode( $valueProdData->p_title ) ) ?> from Netlink Technologies"><i style="color: #4285F4"
+												   href="mailto:sales@primecomponents.net?subject=Order <?= urldecode( htmlspecialchars_decode( $valueProdData->p_code ) ) ?> :: <?= urldecode( htmlspecialchars_decode( $valueProdData->p_title ) ) ?>"><i style="color: #4285F4"
 												                                                                                                                                                                                                                                    class="fa fa-envelope"> </i> </a>
 											</div>
 											<div class="product_details">
