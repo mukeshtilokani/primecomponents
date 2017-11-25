@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="<?=SITEURL?>css/formValidation.min.css">
 <script src="<?=SITEURL?>js/formValidation.min.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/framework/bootstrap.min.js"></script>
 		<div id="alertContainer"></div>
